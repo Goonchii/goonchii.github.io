@@ -11,7 +11,7 @@
             }
 
             body {
-                font-family: 'Nunito', sans-serif;
+                font-family: 'Nintendo';
                 font-family: 'courier', sans-serif;
                 margin: 0;
                 color: #000000;
@@ -104,7 +104,7 @@
                 margin-bottom: 10px;
             }
 
-            .homebutton {
+            .brownbutton {
                 background-image: linear-gradient(#543030, #854d54 50%, #5c3232 50%, #854d54);
                 border-color: #3c0f15;
                 color: white;
@@ -239,6 +239,28 @@
 
             * {
                 box-sizing: border-box;
+            }
+            
+            .links {
+                text-align: center;
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                place-items: center;
+                flex-wrap: wrap;
+            }
+
+            .links button {
+                color: white;
+                font-family: 'Nintendo';
+                font-size: 50;
+                padding: 5px 10px;
+                width: 170px;
+                margin-top: -5px;
+                border-width: 1px;
+                border-style: inset;
+                border-radius: 5px;
+                filter: drop-shadow(0 0 2px gray);
             }
 
             /* below this line is CSS for the layout */
