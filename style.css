@@ -1,424 +1,430 @@
+@font-face {
+    font-family: Nintendo;
+    src: url(https://dl.dropbox.com/s/8w4sembeqyz4rsq/Nintendo-DS-BIOS.ttf);
+}
 
-            @font-face {
-                font-family: Nintendo;
-                src: url(https://dl.dropbox.com/s/8w4sembeqyz4rsq/Nintendo-DS-BIOS.ttf);
-            }
-            .header {
-              height: 220px;
-              background-image: url(https://i.postimg.cc/ydpscrYS/Gonchy-banner.png);
-              background-size: cover;
-              background-position: center;
-            }
+/* Base */
 
-            body {
-                font-family: 'Nintendo';
-                font-family: 'courier', sans-serif;
-                margin: 0;
-                color: #000000;
-                background-color: black;
-                background-image: url('https://i.postimg.cc/MTqz1t3b/Depositphotos-80690800-xl-2015-1-scaled.jpg');
-                background-repeat: repeat;
-                background-attachment: fixed;
-                background-size: 100%;
-            }
+* {
+    box-sizing: border-box;
+    cursor: url('assets/cursor/normal.cur'), auto;
+}
 
-            .nav {
-                text-align: center;
-                display: grid;
-                place-items: center;
-            }
+/* pointer - for links and buttons */
+a, button {
+    cursor: url('assets/cursor/link.cur'), pointer;
+}
 
-            .nav button {
-                color: white;
-                font-family: 'Nintendo';
-                font-size: 50;
-                display: block;
-                padding: 5px 10px;
-                width: 200px;
-                margin-top: -5px;
-                border-width: 1px;
-                border-style: inset;
-                border-radius: 5px;
-                filter: drop-shadow(0 0 2px gray);
-            }
+/* text - for selectable text */
+input, textarea {
+    cursor: url('assets/cursor/text.cur'), text;
+}
 
-            .redbutton {
-                background-image: linear-gradient(#f03d84, #ff7cb0 50%, #fd5196 50%, #ff7cb0);
-                border-color: #f03d84;
-            }
-            .redbutton:hover {
-                background-image: linear-gradient(#ffc0d9, #ff7cb0 50%, #fd5196 50%, #fdaacb);
-                border-color: #f03d84;
-            }
+/* loading */
+.loading {
+    cursor: url('assets/cursor/busy.cur'), wait;
+}
 
-            .orangebutton {
-                background-image: linear-gradient(#f07d35, #ffa66e 50%, #fd8438 50%, #ffa66e);
-                border-color: #f07d35;
-            }
-            .orangebutton:hover {
-                background-image: linear-gradient(#ffccac, #ffa66e 50%, #fd8438 50%, #fcc09b);
-                border-color: #f07d35;
-            }
+/* not allowed - for disabled elements */
+:disabled, [disabled] {
+    cursor: url('assets/cursor/unavailable.cur'), not-allowed;
+}
 
-            .yellowbutton {
-                background-image: linear-gradient(#f0b136, #ffd580 50%, #fdbe40 50%, #ffd580);
-                border-color: #f0b136;
-            }
-            .yellowbutton:hover {
-                background-image: linear-gradient(#ffe9be, #ffd580 50%, #fdbe40 50%, #ffe1a5);
-                border-color: #f0b136;
-            }
+body {
+    font-family: 'Nintendo';
+    font-size: 16px;
+    margin: 0;
+    color: #000000;
+    background-color: white;
+    background-image: url('https://i.postimg.cc/MTqz1t3b/Depositphotos-80690800-xl-2015-1-scaled.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
 
-            .greenbutton {
-                background-image: linear-gradient(#7fc938, #a0f750 50%, #82cf3a 50%, #a0f750);
-                border-color: #7fc938;
-            }
-            .greenbutton:hover {
-                background-image: linear-gradient(#beff81, #a0f750 50%, #82cf3a 50%, #c1fc8b);
-                border-color: #7fc938;
-            }
+a:link {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
 
-            .bluebutton {
-                background-image: linear-gradient(#14c9dd, #45ecff 50%, #14c9dd 50%, #45ecff);
-                border-color: #14c9dd;
-            }
-            .bluebutton:hover {
-                background-image: linear-gradient(#99eff8, #45ecff 50%, #14c9dd 50%, #93f4ff);
-                border-color: #14c9dd;
-            }
+h1,
+h2,
+h3 {
+    color: #ED64F5;
+}
 
-            .purplebutton {
-                background-image: linear-gradient(#a037f0, #c06dff 50%, #ac41fd 50%, #c06dff);
-                border-color: #a037f0;
-            }
-            .purplebutton:hover {
-                background-image: linear-gradient(#ce93fc, #c06dff 50%, #ac41fd 50%, #cf90ff);
-                border-color: #a037f0;
-            }
+h1 {
+    font-size: 25px;
+}
 
-            .nav form:first-child{
-                margin-top: 15px;
-            }
+strong {
+    color: #ED64F5;
+}
 
-            .nav form:last-child{
-                margin-bottom: 10px;
-            }
+/* Layout */
 
-            .brownbutton {
-                background-image: linear-gradient(#543030, #854d54 50%, #5c3232 50%, #854d54);
-                border-color: #3c0f15;
-                color: white;
-                font-family: 'Nintendo';
-                font-size: 50;
-                display: block;
-                padding: 5px 10px;
-                width: 150px;
-                border-width: 1px;
-                border-style: inset;
-                border-radius: 5px;
-                filter: drop-shadow(0 0 2px gray);
-            }
-            .homebutton:hover {
-                background-image: linear-gradient(#815e5e, #854d54 50%, #5c3838 50%, #9e7176);
-                border-color: #3c0f15;
-            }
+#container {
+    max-width: 900px;
+    margin: 0 auto;
+}
 
-            .h1 {
-                font-family: Nintendo;
-                font-size: 35px;
-                color: white;
-                background-color: #664040;
-                padding-left: 10px;
-            }
+#container a {
+    color: #ED64F5;
+    font-weight: bold;
+}
 
-            .todo {
-                margin-top: 10px;
-                margin-bottom: 10px;
-                margin-left: 10px;
-                font-family: Nintendo;
-                font-size: 24px;
-                color: #7e5353;
-                border: dashed;
-                border-radius: 5px;
-                border-color: #7a5252;
-                width: 210px; 
-                height: 100px; 
-                overflow: auto;
-                background-color: white;
-            }
-            .todolist {
-                list-style: none;
-                padding: 5;
-                margin-top: 0;
-                margin-bottom: 0;
-                text-align: left;
-            }
+#flex {
+    display: flex;
+}
 
-            .pink {
-                background-color: white;
-                color: #f03d84;
-            }
-            .orange {
-                background-color: white;
-                color: #f07d35;
-            }
-            .yellow {
-                background-color: white;
-                color: #f0b136;
-            }
-            .green {
-                background-color: white;
-                color: #7fc938;
-            }
-            .blue {
-                background-color: white;
-                color: #14c9dd;
-            }
-            .purple {
-                background-color: white;
-                color: #a037f0;
-            }
+aside {
+    width: 250px;
+    font-size: smaller;
+}
 
-            .welcome {
-                color: #7e5353;
-                font-family: 'Nintendo';
-                font-size: 24;
-            }
+main {
+    flex: 1;
+    order: 2;
+}
 
-            .bubbles {
-                white-space: nowrap;
-                padding: 0;
-            }
+#leftSidebar {
+    order: 1;
+}
 
-            .bubblesline {
-                list-style: none;
-                display: inline;
-            }
+#rightSidebar {
+    order: 3;
+}
 
-            ::-webkit-scrollbar {
-                width: 10px;
-            }
-            ::-webkit-scrollbar-track {
-                box-shadow: inset 0 0 5px rgb(194, 194, 194);
-                border-radius: 10px;
-            }
-            ::-webkit-scrollbar-thumb {
-                background: linear-gradient(#ff7cb0, #ffa66e, #ffd580, #a0f750, #45ecff, #c06dff);
-                border-radius: 10px;
-            }
-            ::-webkit-scrollbar-thumb:hover {
-                background: linear-gradient(#ffc0d9, #ffccac, #ffe9be, #beff81, #99eff8, #ce93fc);
-            }
+#topBar {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    font-size: smaller;
+    background-color: #13092D;
+}
 
-            a:link {
-                text-decoration: none;
-                margin: 0;
-                padding: 0;
-            }
+footer {
+    background-color: #13092D;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+}
 
-            .graphics {
-                background-color: #a58080; 
-                display: flex;
-                align-items: center;
-                justify-content: space-evenly;
-                flex-wrap: wrap;
-                border-top: none;
-                overflow-y: auto;
-                overflow-x: hidden;
-            }
+/* Header */
 
-            marquee {
-                display: flex;
-                align-items: center;
-                justify-content: space-evenly;
-                flex-wrap: wrap;
-                border-top: none;
-                overflow-y: auto;
-                overflow-x: hidden;
-            }
+.header {
+    height: 220px;
+    background-image: url(https://i.postimg.cc/ydpscrYS/Gonchy-banner.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
 
-            * {
-                box-sizing: border-box;
-            }
-            
-            .links {
-                text-align: center;
-                display: flex;
-                gap: 10px;
-                justify-content: center;
-                place-items: center;
-                flex-wrap: wrap;
-            }
+/* Navigation */
 
-            .links button {
-                color: white;
-                font-family: 'Nintendo';
-                font-size: 50;
-                padding: 5px 10px;
-                width: 170px;
-                margin-top: -5px;
-                border-width: 1px;
-                border-style: inset;
-                border-radius: 5px;
-                filter: drop-shadow(0 0 2px gray);
-            }
+.nav {
+    text-align: center;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    padding: 10px;
+}
 
-            /* below this line is CSS for the layout */
+.nav button {
+    color: white;
+    font-family: 'Nintendo';
+    font-size: 50px;
+    display: block;
+    padding: 5px 10px;
+    width: 200px;
+    border-width: 1px;
+    border-style: inset;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 2px gray);
+}
 
-            /* this is a CSS comment
-    to uncomment a line of CSS, remove the * and the /
-    before and after the text */
+/* Buttons */
 
+.redbutton {
+    background-image: linear-gradient(#f03d84, #ff7cb0 50%, #fd5196 50%, #ff7cb0);
+    border-color: #f03d84;
+}
+.redbutton:hover {
+    background-image: linear-gradient(#ffc0d9, #ff7cb0 50%, #fd5196 50%, #fdaacb);
+    border-color: #f03d84;
+}
 
-            /* the "container" is what wraps your entire website */
-            /* if you want something (like the header) to be Wider than
-    the other elements, you will need to move that div outside
-    of the container */
-            #container {
-                max-width: 900px;
-                /* this is the width of your layout! */
-                /* if you change the above value, scroll to the bottom
-      and change the media query according to the comment! */
-                margin: 0 auto;
-                /* this centers the entire page */
-            }
+.orangebutton {
+    background-image: linear-gradient(#f07d35, #ffa66e 50%, #fd8438 50%, #ffa66e);
+    border-color: #f07d35;
+}
+.orangebutton:hover {
+    background-image: linear-gradient(#ffccac, #ffa66e 50%, #fd8438 50%, #fcc09b);
+    border-color: #f07d35;
+}
 
-            /* the area below is for all links on your page
-    EXCEPT for the navigation */
-            #container a {
-                color: #ED64F5;
-                font-weight: bold;
-                /* if you want to remove the underline
-      you can add a line below here that says:
-      text-decoration:none; */
-            }
+.yellowbutton {
+    background-image: linear-gradient(#f0b136, #ffd580 50%, #fdbe40 50%, #ffd580);
+    border-color: #f0b136;
+}
+.yellowbutton:hover {
+    background-image: linear-gradient(#ffe9be, #ffd580 50%, #fdbe40 50%, #ffe1a5);
+    border-color: #f0b136;
+}
 
-            #header {
-                width: 100%;
-                background-color: #5e4e8c;
-                /* header color here! */
-                height: 100px;
-                /* this is only for a background image! */
-                /* if you want to put images IN the header, 
-      you can add them directly to the <div id="header"></div> element! */
-                background-image: var(--header-image);
-                background-size: 100%;
-            }
+.greenbutton {
+    background-image: linear-gradient(#7fc938, #a0f750 50%, #82cf3a 50%, #a0f750);
+    border-color: #7fc938;
+}
+.greenbutton:hover {
+    background-image: linear-gradient(#beff81, #a0f750 50%, #82cf3a 50%, #c1fc8b);
+    border-color: #7fc938;
+}
 
-            #flex {
-                display: flex;
-            }
+.bluebutton {
+    background-image: linear-gradient(#14c9dd, #45ecff 50%, #14c9dd 50%, #45ecff);
+    border-color: #14c9dd;
+}
+.bluebutton:hover {
+    background-image: linear-gradient(#99eff8, #45ecff 50%, #14c9dd 50%, #93f4ff);
+    border-color: #14c9dd;
+}
 
-            /* this colors BOTH sidebars
-    if you want to style them separately,
-    create styles for #leftSidebar and #rightSidebar */
-            aside {
-                width: 250px;
-                font-size: smaller;
-                /* this makes the sidebar text slightly smaller */
-            }
+.purplebutton {
+    background-image: linear-gradient(#a037f0, #c06dff 50%, #ac41fd 50%, #c06dff);
+    border-color: #a037f0;
+}
+.purplebutton:hover {
+    background-image: linear-gradient(#ce93fc, #c06dff 50%, #ac41fd 50%, #cf90ff);
+    border-color: #a037f0;
+}
 
+.brownbutton {
+    background-image: linear-gradient(#543030, #854d54 50%, #5c3232 50%, #854d54);
+    border-color: #3c0f15;
+    color: white;
+    font-family: 'Nintendo';
+    font-size: 50px;
+    display: block;
+    padding: 5px 10px;
+    width: 150px;
+    border-width: 1px;
+    border-style: inset;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 2px gray);
+}
+.brownbutton:hover {
+    background-image: linear-gradient(#815e5e, #854d54 50%, #5c3838 50%, #9e7176);
+    border-color: #3c0f15;
+}
 
-            /* this is the color of the main content area,
-    between the sidebars! */
-            main {
-                flex: 1;
-                order: 2;
-            }
+/* Links buttons */
 
-            /* what's this "order" stuff about??
-    allow me to explain!
-    if you're using both sidebars, the "order" value
-    tells the CSS the order in which to display them.
-    left sidebar is 1, content is 2, and right sidebar is 3! */
+.links {
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    place-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
 
-            */ #leftSidebar {
-                order: 1;
-            }
+.links button {
+    color: white;
+    font-family: 'Nintendo';
+    font-size: 50px;
+    padding: 5px 10px;
+    width: 170px;
+    border-width: 1px;
+    border-style: inset;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 2px gray);
+}
 
-            #rightSidebar {
-                order: 3;
-            }
+/* Content */
 
-            footer {
-                background-color: #13092D;
-                /* background color for footer */
-                width: 100%;
-                height: 40px;
-                padding: 10px;
-                text-align: center;
-                /* this centers the footer text */
-            }
+.h1 {
+    font-family: Nintendo;
+    font-size: 35px;
+    color: white;
+    background-color: #664040;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
 
-            h1,
-            h2,
-            h3 {
-                color: #ED64F5;
-            }
+.h2 {
+    font-family: Nintendo;
+    font-size: 30px;
+    color: #664040;
+    margin: 0;
+}
 
-            h1 {
-                font-size: 25px;
-            }
+.todo {
+    margin: 10px 0 10px 10px;
+    font-family: Nintendo;
+    font-size: 24px;
+    color: #7e5353;
+    border-radius: 5px;
+    width: 210px;
+    height: 100px;
+    overflow: auto;
+    background-color: white;
+}
 
-            strong {
-                /* this styles bold text */
-                color: #ED64F5;
-            }
+.todolist {
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    text-align: left;
+}
 
-            /* this is just a cool box, it's the darker colored one */
-            .box {
-                background-color: #13092D;
-                border: 1px solid #ED64F5;
-                padding: 10px;
-            }
+.welcome {
+    color: #7e5353;
+    font-family: 'Nintendo';
+    font-size: 24px;
+    margin: 0;
+    margin-top: 0;
+}
 
-            /* CSS for extras */
+.welcome p {
+    margin: 0;
+    margin-bottom: 15px;
+}
 
-            #topBar {
-                width: 100%;
-                height: 30px;
-                padding: 10px;
-                font-size: smaller;
-                background-color: #13092D;
-            }
+.bubbles {
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
 
+.bubblesline {
+    list-style: none;
+    display: inline;
+}
 
-            /* BELOW THIS POINT IS MEDIA QUERY */
+.graphics {
+    background-color: #a58080;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-top: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 
-            /* so you wanna change the width of your page? 
-    by default, the container width is 900px.
-    in order to keep things responsive, take your new height,
-    and then subtrack it by 100. use this new number as the 
-    "max-width" value below
-    */
+marquee {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-top: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 
-            @media only screen and (max-width: 800px) {
-                #flex {
-                    flex-wrap: wrap;
-                }
+.about {
+    color: #7e5353;
+    font-family: 'Nintendo';
+    font-size: 24px;
+    margin: 0;
+    margin-top: 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
 
-                aside {
-                    width: 100%;
-                }
+.about p {
+    margin: 0;
+    margin-bottom: 15px;
+}
 
-                /* the order of the items is adjusted here for responsiveness!
-      since the sidebars would be too small on a mobile device.
-      feel free to play around with the order!
-      */
-                main {
-                    order: 1;
-                }
+.box {
+    background-color: #13092D;
+    border: 1px solid #ED64F5;
+    padding: 10px;
+}
 
-                #leftSidebar {
-                    order: 2;
-                }
+/* Visitor counter */
 
-                #rightSidebar {
-                    order: 3;
-                }
+#visitorCounter {
+    font-family: Nintendo;
+    font-size: 40px;
+    color: #f03d84;
+    margin: 0;
 
-                #navbar ul {
-                    flex-wrap: wrap;
-                }
-            }
+    height: auto;
+    width: auto;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 0px solid white;
+    user-select: none;
+    margin-bottom: 10px;
+}
+#visitorCounter::before {
+    content: "you are visitor:";
+    font-size: 30px;
+    font-family: Nintendo;
+    color: #7e5353;
+}
 
+/* Text colours */
+
+.pink   { background-color: white; color: #f03d84; }
+.orange { background-color: white; color: #f07d35; }
+.yellow { background-color: white; color: #f0b136; }
+.green  { background-color: white; color: #7fc938; }
+.blue   { background-color: white; color: #14c9dd; }
+.purple { background-color: white; color: #a037f0; }
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(194, 194, 194);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#ff7cb0, #ffa66e, #ffd580, #a0f750, #45ecff, #c06dff);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(#ffc0d9, #ffccac, #ffe9be, #beff81, #99eff8, #ce93fc);
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 800px) {
+    #flex {
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    main {
+        order: 1;
+    }
+
+    #leftSidebar {
+        order: 2;
+    }
+
+    #rightSidebar {
+        order: 3;
+    }
+
+    #navbar ul {
+        flex-wrap: wrap;
+    }
+}
