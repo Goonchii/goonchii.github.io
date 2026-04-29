@@ -1,289 +1,230 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="https://unpkg.com/7.css/dist/gui/window.css">
-        <link rel="stylesheet" href="style.css">
-        
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/7.css/dist/gui/window.css">
+  <link rel="stylesheet" href="https://cdn.cursors-4u.net/cursors/animated/lucky-charms-rainbow-6292b749-32.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-      <!-- Header -->
-        <div id="container" style="margin-top: 10px;">
-            <div id="headerArea" style="margin-bottom: 10px;">
-                <div>
-          <div class="background" style="margin-bottom: 10px;">
-            <div class="window glass active">
-              <div class="title-bar">
-                <div class="title-bar-text">Goonchii's Site ! &#12542;&lpar;&#32;&#707;&#7447;&#706;&#32;&rpar;&#9694;&#32;&bull;&#32;&ast;&#10032;</div>
-                <div class="title-bar-controls">
-                  <button aria-label="Minimize"></button>
-                  <button aria-label="Maximize"></button>
-                  <button aria-label="Close"></button>
-                </div>
-              </div>
-              <div class="window-body">
-                <div class="header">
-              </div>
+  <div id="container" style="margin-top: 10px;">
+
+    <!-- Header -->
+    <div id="headerArea" style="margin-bottom: 10px;">
+      <div class="background" style="margin-bottom: 10px;">
+        <div class="window glass active">
+          <div class="title-bar">
+            <div class="title-bar-text">Goonchii's Site ! &#12542;&#40; &#707;&#7447;&#706; &#41;&#9694; &bull; &#42;&#10032;</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body">
+            <div class="header">
+              <img style="width: 1000px; margin-left: -340px;" src="https://goonchii.github.io/assets/vtuber/vts-2026-01-30_13h33_07.png">
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Sidebar + Main -->
+    <div id="flex">
+
+      <!-- Sidebar -->
+      <aside id="leftSidebar" style="margin-right: 10px;">
+        <div class="background">
+          <div class="window glass active" style="max-height: 900px;">
+            <div class="title-bar">
+              <div class="title-bar-text">Navigation &#3366;&#3405;&#3366;&#3391;&#40;&#757; &bull;&#768; &#7447; - &#757; &#41;</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+              </div>
             </div>
-            <!-- Side bar -->
-            <div id="flex">
-                <aside id="leftSidebar" style="margin-right: 10px;">
-                    <div>
-          <div class="background">
-            <div class="window glass active" style="max-height: 900px;">
-              <div class="title-bar">
-                <div class="title-bar-text">Navigation &#3366;&#3405;&#3366;&#3391;&lpar;&#757;&#32;&bull;&#768;&#32;&#7447;&#32;&#45;&#32;&#757;&#32;&rpar;</div>
-                <div class="title-bar-controls">
-                  <button aria-label="Minimize"></button>
-                  <button aria-label="Maximize"></button>
-                  <button aria-label="Close"></button>
-                </div>
+
+            <div class="window-body" style="background-color: white;">
+
+              <!-- Navigation buttons -->
+              <div class="nav">
+                <button class="redbutton" onclick="location.href='https://goonchii.neocities.org/not_found'">projects</button>
+                <button class="yellowbutton" onclick="location.href='https://goonchii.neocities.org/not_found'">art</button>
+                <button class="greenbutton" onclick="location.href='https://goonchii.neocities.org/not_found'">guestbook</button>
+                <button class="bluebutton" onclick="location.href='https://goonchii.neocities.org/stamps'">stamps</button>
+                <button class="purplebutton" onclick="location.href='https://goonchii.neocities.org/not_found'">sitemap</button>
               </div>
-              <!-- Navigation bar-->
-              <div class="window-body" style="background-color: white;">
-                <div class="nav">
-                  <form action="https://goonchii.neocities.org/not_found">
-                    <button class="redbutton">
-                      about
-                    </button>
-                  </form>
-                  <form action="https://goonchii.neocities.org/not_found">
-                    <button class="yellowbutton">
-                      art
-                    </button>
-                  </form>
-                  <form action="https://goonchii.neocities.org/not_found">
-                    <button class="greenbutton">
-                      projects
-                    </button>
-                  </form>
-                  <form action="https://goonchii.neocities.org/not_found">
-                    <button class="bluebutton">
-                      guestbook
-                    </button>
-                  </form>
-                  <form action="https://goonchii.neocities.org/coolstuff">
-                    <button class="purplebutton">
-                      cool stuff
-                    </button>
-                  </form>
-              </div>
+
+              <div class="h1">status</div>
+              <p>WIP</p>
+
               <!-- Updates -->
-              <div class="h1">
-                // updates //
-                </div>
-                  <div class="todo">
-                        <ul class="todolist">
-                          <li>
-                             <mark class="purple">23/06/25</mark> - added more stamps to cool stuff
-                          </li>
-                          <li>
-                             <mark class="blue">22/06/25</mark> - added cool stuff page (wip) for my stamp collection and more!
-                          </li>
-                          <li>
-                             <mark class="green">21/06/25</mark> - added links to buttons (not found for now),
-                              updates section, scrolling bar/marquee (unfinished), to-do and updates header, 
-                              customised scroll bar, customised to-do section
-                          </li>
-                          <li>
-                             <mark class="yellow">20/06/25</mark> - added to-do list and customisation: buttons,
-                             bubbles, kaomoji
-                          </li>
-                          <li>
-                             <mark class="orange">19/06/25</mark> - added basics: layout, background, banner,
-                             font, navigation buttons, welcome message
-                          </li>
-                          <li>
-                             <mark class="pink">11/06/25</mark> - created this website! :D
-                          </li>
-                        </ul>
-                </div>
-                <!-- Todo list -->
-                <div class="h1">
-                // to-do //
-                </div>
-                  <div class="todo">
-                        <ul class="todolist">
-                          <li>
-                            <img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> home page
-                          </li>
-                          <li>
-                            <img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> about page
-                          </li>
-                          <li>
-                            <img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> art page
-                          </li>
-                          <li>
-                            <img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> vtuber page
-                          </li>
-                          <li>
-                            <img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> projects page
-                          </li>
-                          <li>
-                            <img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> guestbook page
-                          </li>
-                          <li>
-                            <img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> cool stuff page
-                          </li>
-                          <li>
-                            <img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> links to socials
-                          </li>
-                          <li>
-                            <img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> visitor counter
-                          </li>
-                          <li>
-                            <s><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> to do list</s>
-                          </li>
-                          <li>
-                            <s>
-                              <img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> updates log
-                            </s>
-                          </li>
-                          <li>
-                            <img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> scrolling bar of stamps
-                          </li>
-                          <li>
-                            <img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> status
-                          </li>
-                          <li>
-                            <img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> custom cursor
-                          </li>
-                          <li>
-                            <img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> 404 page
-                          </li>
-                          <li>
-                            <img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> site history/progress pics in projects section??
-                          </li>
-                        </ul>
-                </div>
-            </div>
+              <div class="h1">updates</div>
+              <div class="todo">
+                <ul class="todolist">
+                  <li><mark class="purple">23/06/25</mark> - added more stamps to cool stuff</li>
+                  <li><mark class="blue">22/06/25</mark> - added cool stuff page (wip) for my stamp collection and more!</li>
+                  <li><mark class="green">21/06/25</mark> - added links to buttons (not found for now), updates section, scrolling bar/marquee (unfinished), to-do and updates header, customised scroll bar, customised to-do section</li>
+                  <li><mark class="yellow">20/06/25</mark> - added to-do list and customisation: buttons, bubbles, kaomoji</li>
+                  <li><mark class="orange">19/06/25</mark> - added basics: layout, background, banner, font, navigation buttons, welcome message</li>
+                  <li><mark class="pink">11/06/25</mark> - created this website! :D</li>
+                </ul>
+              </div>
+
+              <!-- To-do list -->
+              <div class="h1">to-do</div>
+              <div class="todo">
+                <ul class="todolist">
+                  <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> home page</li>
+                  <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> art page</li>
+                  <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> projects page</li>
+                  <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> guestbook page</li>
+                  <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> stamps page</li>
+                  <li><s><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> links to socials</s></li>
+                  <li><s><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> visitor counter</s></li>
+                  <li><s><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> to do list</s></li>
+                  <li><s><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> updates log</s></li>
+                  <li><s><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> scrolling bar of stamps</s></li>
+                  <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> status</li>
+                  <li><s><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> custom cursor</s></li>
+                  <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> 404 page</li>
+                  <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> link button</li>
+                  <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> site history/progress pics in projects section??</li>
+                </ul>
+              </div>
+
+              <div class="h1">visits</div>
+              <div style="display: flex; align-items: center; gap: 1px; justify-content: center;">
+                <img style="image-rendering: pixelated; width: 30px; margin-right: 3px;" src="https://blob.gifcities.org/gifcities/VOWHPSHU2APNJHP656LX4TVXYTZJK2I3.gif">
+                <script id="rainbow-visits" src="https://404city.neocities.org/widget/visitorCounter.js" data-sitename="goonchii"></script>
+                <img style="transform: scaleX(-1); image-rendering: pixelated; width: 30px; margin-left: 1px;" src="https://blob.gifcities.org/gifcities/VOWHPSHU2APNJHP656LX4TVXYTZJK2I3.gif">
+              </div>
+              
+
+              <div class="h1">link me</div>
+
             </div>
           </div>
         </div>
-                </aside>
-                <!-- Main -->
-                <main>
-                    <div class="background">
-            <div class="window glass active">
-              <div class="title-bar">
-                <div class="title-bar-text">Welcome ! &lpar;&#758;&#707;&#32;&#5596;&#32;&#706;&#758;&rpar;</div>
-                <div class="title-bar-controls">
-                  <button aria-label="Minimize"></button>
-                  <button aria-label="Maximize"></button>
-                  <button aria-label="Close"></button>
-                </div>
+      </aside>
+
+      <!-- Main content -->
+      <main>
+        <div class="background">
+          <div class="window glass active">
+            <div class="title-bar">
+              <div class="title-bar-text">Welcome ! &#40;&#758;&#707; &#5596; &#706;&#758;&#41;</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
               </div>
-              <div class="window-body has-space" style="background-color: white;">
-                <div style="text-align: center;">
-                  <p style="font-family: Nintendo; font-size: 30px; color: #4d2f2f;">
-                    <!-- Construction warning -->
-                    <img src='https://blob.gifcities.org/gifcities/BXFJV7PNT7TNNL5RMUNESWTZOHPUPOTP.gif'
-                    style="width: 600px;"/>
-                    <img src="https://cdn.betterttv.net/emote/6002bc3a465444316bf6616f/3x.webp"
-                      style="width: 50px;"/>
-                      ! ! major construction underway ! !
-                      <img src="https://cdn.betterttv.net/emote/6002bc3a465444316bf6616f/3x.webp"
-                      style="width: 50px;"/>
-                  </p>
-                  <!-- Welcome message -->
+            </div>
+
+            <div class="window-body has-space" style="background-color: white;">
+              <div style="text-align: center;">
+
+                <!-- Bubble divider -->
+                <p>
+                  <ul class="bubbles">
+                    <li class="bubblesline">
+                      <img style="width: 300px;" src="https://64.media.tumblr.com/3837f81efb037b78d5f3b83136abd9ff/a2b9a9b92798b874-24/s400x600/0c9e64c94fb660d3ef32326e9c1a891cab720857.pnj"/>
+                    </li>
+                    <li class="bubblesline">
+                      <img style="width: 300px;" src="https://64.media.tumblr.com/3837f81efb037b78d5f3b83136abd9ff/a2b9a9b92798b874-24/s400x600/0c9e64c94fb660d3ef32326e9c1a891cab720857.pnj"/>
+                    </li>
+                  </ul>
+                </p>
+
+                <!-- Welcome message -->
+                <p class="welcome">
+                  welcome to goonchii.neocities.org, the main hub on the www for all things goonchii!
+                  <img src="https://nukochannel.neocities.org/NukoImg/Reactions/nukoOmikujiMediumFortune.gif" style="height: 30px; image-rendering: pixelated;"/>
+                </p>
+                <p class="welcome">
+                  here you will find links to all of my social medias and (almost) everything i have made, including art, games and more
+                </p>
+
+                <!-- Stamp marquee -->
+                <marquee>
                   <p>
-                    <ul class="bubbles">
-                      <li class="bubblesline">
-                      <img style="width: 300px;" 
-                        src='https://64.media.tumblr.com/3837f81efb037b78d5f3b83136abd9ff/a2b9a9b92798b874-24/s400x600/0c9e64c94fb660d3ef32326e9c1a891cab720857.pnj'/>
-                      </li>
-                      <li class="bubblesline">
-                      <img style="width: 300px;" 
-                        src='https://64.media.tumblr.com/3837f81efb037b78d5f3b83136abd9ff/a2b9a9b92798b874-24/s400x600/0c9e64c94fb660d3ef32326e9c1a891cab720857.pnj'/>
-                      </li>
-                    </ul>
+                    <a href="https://cloudcover.neocities.org/digital/stamps"><img src="https://cloudcover.neocities.org/stamps/kow-chanDA.gif" style="width: 99px; height: 56px;"/></a>
+                    <a href="https://cloudcover.neocities.org/digital/stamps"><img src="https://cloudcover.neocities.org/stamps/babykttn1.gif" style="width: 99px; height: 56px;"/></a>
+                    <a href="https://omfg.neocities.org/graphics"><img src="https://cloudcover.neocities.org/stamps/bunger.gif" style="width: 99px; height: 56px;"/></a>
+                    <a href="https://cloudcover.neocities.org/digital/stamps"><img src="https://cloudcover.neocities.org/stamps/LaraLeeLDAnew.gif" style="width: 99px; height: 56px;"/></a>
+                    <a href="https://cloudcover.neocities.org/digital/stamps"><img src="https://cloudcover.neocities.org/stamps/literallyfictional1.png" style="width: 99px; height: 56px;"/></a>
+                    <a href="https://www.deviantart.com/flaiki/"><img src="https://cloudcover.neocities.org/stamps/flaiki6.png" style="width: 99px; height: 56px;"/></a>
                   </p>
-                  <p class="welcome">
-                      welcome to goonchii.neocities.org, the main hub on the www for all things goonchii! 
-                      <img src='https://nukochannel.neocities.org/NukoImg/Reactions/nukoOmikujiMediumFortune.gif' style="height: 30px;"/> 
-                  </p>
-                  <!-- Marquee -->
-                  <marquee>
-                    <p>
-                      <a href="https://cloudcover.neocities.org/digital/stamps">
-                        <img src="https://cloudcover.neocities.org/stamps/kow-chanDA.gif"
-                        style="width: 99px; height: 56px;"/>
-                      </a>
-                      <a href="https://cloudcover.neocities.org/digital/stamps">
-                        <img src="https://cloudcover.neocities.org/stamps/babykttn1.gif"
-                        style="width: 99px; height: 56px;"/>
-                      </a>
-                      <a href="https://omfg.neocities.org/graphics">
-                        <img src="https://cloudcover.neocities.org/stamps/bunger.gif"
-                        style="width: 99px; height: 56px;"/>
-                      </a>
-                      <a href="https://cloudcover.neocities.org/digital/stamps">
-                        <img src="https://cloudcover.neocities.org/stamps/LaraLeeLDAnew.gif"
-                        style="width: 99px; height: 56px;"/>
-                      </a>
-                      <a href="https://cloudcover.neocities.org/digital/stamps">
-                        <img src="https://cloudcover.neocities.org/stamps/literallyfictional1.png"
-                        style="width: 99px; height: 56px;"/>
-                      </a>
-                      <a href="https://www.deviantart.com/flaiki/">
-                        <img src="https://cloudcover.neocities.org/stamps/flaiki6.png"
-                        style="width: 99px; height: 56px;"/>
-                      </a>
-                    </p>
-                  </marquee>
-                    <p>
-                    <ul class="bubbles">
-                      <li class="bubblesline">
-                      <img style="width: 300px;" 
-                        src='https://64.media.tumblr.com/3837f81efb037b78d5f3b83136abd9ff/a2b9a9b92798b874-24/s400x600/0c9e64c94fb660d3ef32326e9c1a891cab720857.pnj'/>
-                      </li>
-                      <li class="bubblesline">
-                      <img style="width: 300px;" 
-                        src='https://64.media.tumblr.com/3837f81efb037b78d5f3b83136abd9ff/a2b9a9b92798b874-24/s400x600/0c9e64c94fb660d3ef32326e9c1a891cab720857.pnj'/>
-                      </li>
-                    </ul>
-                  </p>
-                  <!-- Links buttons -->
-                  <p class="h1">
-                    links
-                  <div class="links">
-                    <form action="https://www.instagram.com/goonchiifish/">
-                      <button class="brownbutton">
-                        instagram
-                      </button>
-                    </form>
-                    <form action="https://www.youtube.com/channel/UClfB0QzH4kWAidjV16ji63Q">
-                      <button class="brownbutton">
-                        youtube
-                      </button>
-                    </form>
-                    <form action="https://github.com/Goonchii">
-                      <button class="brownbutton">
-                        github
-                      </button>
-                    </form>
-                    <form action="https://www.twitch.tv/goonchii">
-                      <button class="brownbutton">
-                        twitch
-                      </button>
-                    </form>
-                    <form action="https://x.com/goonchiifish">
-                      <button class="brownbutton">
-                        twitter
-                      </button>
-                    </form>
-                  </div>
-                  </p>
+                </marquee>
+
+                <!-- Bubble divider -->
+                <p>
+                  <ul class="bubbles">
+                    <li class="bubblesline">
+                      <img style="width: 300px;" src="https://64.media.tumblr.com/3837f81efb037b78d5f3b83136abd9ff/a2b9a9b92798b874-24/s400x600/0c9e64c94fb660d3ef32326e9c1a891cab720857.pnj"/>
+                    </li>
+                    <li class="bubblesline">
+                      <img style="width: 300px;" src="https://64.media.tumblr.com/3837f81efb037b78d5f3b83136abd9ff/a2b9a9b92798b874-24/s400x600/0c9e64c94fb660d3ef32326e9c1a891cab720857.pnj"/>
+                    </li>
+                  </ul>
+                </p>
+
+                <!-- Social links -->
+                <p class="h1">links</p>
+                <div class="links">
+                  <button class="redbutton" onclick="location.href='https://www.instagram.com/goonchiifish/'">instagram</button>
+                  <button class="yellowbutton" onclick="location.href='https://www.youtube.com/channel/UClfB0QzH4kWAidjV16ji63Q'">youtube</button>
+                  <button class="greenbutton" onclick="location.href='https://github.com/Goonchii'">github</button>
+                  <img style="transform: scaleX(-1); width: 110px; image-rendering: pixelated;" src="https://goonchii.github.io/assets/nyan cat.gif"/>
+                  <button class="bluebutton" onclick="location.href='https://www.twitch.tv/goonchii'">twitch</button>
+                  <button class="purplebutton" onclick="location.href='https://x.com/goonchiifish'">twitter</button>
+                  <img style="width: 110px; image-rendering: pixelated;" src="https://goonchii.github.io/assets/nyan cat.gif"/>
                 </div>
+
+                <!-- About me -->
+                <div class="h1">about me</div>
+                <div class="about">
+                  <img style="width: 400px;" src="https://goonchii.github.io/assets/comms/goonchii_transparent_noeffects.png">
+                  <div>
+                    <p class="h2">goonchii &#0183; 23 &#0183; they/she</p>
+                    <p>my name is <mark class="pink">goonchii</mark>, but people call me <mark class="orange">goon</mark>, <mark class="yellow">gonch</mark>, <mark class="green">gonchy</mark>, <mark class="blue">goondiwindi</mark> etc. Full name <mark class="purple">goonchiifish</mark>.</p>
+                    <p>i'm a <span id="rainbow-text">peer reviewed autistic thing</span> from the UK, currently finishing my masters in computer science
+                      <img style="height: 30px; image-rendering: pixelated; display: block; margin: 0 auto;" src="https://nukochannel.neocities.org/NukoImg/Activities/Hobbies/nukoBrowsing.gif"/>
+                    </p>
+                    <p>i code, make games, art and sometimes stream on twitch</p>
+                    
+                    <li class="bubblesline">
+                      <img style="width: 300px; margin-left: 100px;" src="https://64.media.tumblr.com/3837f81efb037b78d5f3b83136abd9ff/a2b9a9b92798b874-24/s400x600/0c9e64c94fb660d3ef32326e9c1a891cab720857.pnj"/>
+                    </li>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
-                </main>
-                
-            </div>
-            
         </div>
-    </body>
+      </main>
+
+    </div>
+  </div>
+
+</body>
+
+<script>
+    const colours = ["pink", "orange", "yellow", "green", "blue", "purple"];
+
+    function rainbowText(id) {
+        const el = document.getElementById(id);
+        el.innerHTML = el.textContent.split("").map((letter, i) =>
+            letter === " " ? " " : `<mark class="${colours[i % colours.length]}">${letter}</mark>`
+        ).join("");
+    }
+
+    rainbowText("rainbow-visits");
+    rainbowText("rainbow-text");
+    // add more calls here for each element
+</script>
+
 </html>
