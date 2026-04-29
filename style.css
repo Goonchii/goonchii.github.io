@@ -70,8 +70,8 @@ strong {
 }
 
 #container a {
-    color: #ED64F5;
-    font-weight: bold;
+    color: #3c0f15;
+    font-size: 45px;
 }
 
 #flex {
@@ -246,6 +246,22 @@ footer {
     border-style: inset;
     border-radius: 5px;
     filter: drop-shadow(0 0 2px gray);
+}
+
+/* Status */
+
+#statuscafe {
+    font-family: 'Nintendo';
+    font-size: 20px;
+    margin: 10px;
+    margin-top: -5px;
+}
+#statuscafe-username {
+    color: #7e5353;
+}
+#statuscafe-content {
+    color: #543030;
+    font-size: 30px;
 }
 
 /* Content */

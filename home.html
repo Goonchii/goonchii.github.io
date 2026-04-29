@@ -38,7 +38,7 @@
         <div class="background">
           <div class="window glass active" style="max-height: 900px;">
             <div class="title-bar">
-              <div class="title-bar-text">Navigation &#3366;&#3405;&#3366;&#3391;&#40;&#757; &bull;&#768; &#7447; - &#757; &#41;</div>
+              <div class="title-bar-text">Navigation &#3366;&#3405;&#3366;&#3391;&#40;&#757; &bull;&#768; &#7447; - &#757;</div>
               <div class="title-bar-controls">
                 <button aria-label="Minimize"></button>
                 <button aria-label="Maximize"></button>
@@ -57,8 +57,13 @@
                 <button class="purplebutton" onclick="location.href='https://goonchii.neocities.org/not_found'">sitemap</button>
               </div>
 
+              <!-- Status-->
               <div class="h1">status</div>
-              <p>WIP</p>
+              <div id="statuscafe">
+                <div id="statuscafe-username"></div>
+                <div id="statuscafe-content"></div>
+              </div>
+              <script src="https://status.cafe/current-status.js?name=goonchiifish" defer></script>
 
               <!-- Updates -->
               <div class="h1">updates</div>
@@ -179,7 +184,7 @@
                   <button class="greenbutton" onclick="location.href='https://github.com/Goonchii'">github</button>
                   <img style="transform: scaleX(-1); width: 110px; image-rendering: pixelated;" src="https://goonchii.github.io/assets/nyan cat.gif"/>
                   <button class="bluebutton" onclick="location.href='https://www.twitch.tv/goonchii'">twitch</button>
-                  <button class="purplebutton" onclick="location.href='https://x.com/goonchiifish'">twitter</button>
+                  <button class="purplebutton" onclick="location.href='https://ko-fi.com/goonchii'">ko-fi</button>
                   <img style="width: 110px; image-rendering: pixelated;" src="https://goonchii.github.io/assets/nyan cat.gif"/>
                 </div>
 
@@ -194,6 +199,7 @@
                       <img style="height: 30px; image-rendering: pixelated; display: block; margin: 0 auto;" src="https://nukochannel.neocities.org/NukoImg/Activities/Hobbies/nukoBrowsing.gif"/>
                     </p>
                     <p>i code, make games, art and sometimes stream on twitch</p>
+                    <p style="font-size: 20px; color: #664040 ; margin-bottom: -1px;"><<< art by @kitsunderes</p>
                     
                     <li class="bubblesline">
                       <img style="width: 300px; margin-left: 100px;" src="https://64.media.tumblr.com/3837f81efb037b78d5f3b83136abd9ff/a2b9a9b92798b874-24/s400x600/0c9e64c94fb660d3ef32326e9c1a891cab720857.pnj"/>
@@ -224,7 +230,6 @@
 
     rainbowText("rainbow-visits");
     rainbowText("rainbow-text");
-    // add more calls here for each element
 </script>
 
 </html>
