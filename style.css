@@ -71,7 +71,7 @@ strong {
 
 #container a {
     color: #3c0f15;
-    font-size: 45px;
+    font-size: 30px;
 }
 
 #flex {
@@ -123,7 +123,7 @@ footer {
 }
 
 .window-body {
-    overflow: hidden;
+    overflow: visible;
 }
 
 /* Navigation */
@@ -248,22 +248,6 @@ footer {
     filter: drop-shadow(0 0 2px gray);
 }
 
-/* Status */
-
-#statuscafe {
-    font-family: 'Nintendo';
-    font-size: 20px;
-    margin: 10px;
-    margin-top: -5px;
-}
-#statuscafe-username {
-    color: #7e5353;
-}
-#statuscafe-content {
-    color: #543030;
-    font-size: 30px;
-}
-
 /* Content */
 
 .h1 {
@@ -284,12 +268,13 @@ footer {
 }
 
 .todo {
-    margin: 10px 0 10px 10px;
+    margin: 5px 5px 5px 5px;
     font-family: Nintendo;
     font-size: 24px;
     color: #7e5353;
+    border: 1px dashed;
     border-radius: 5px;
-    width: 210px;
+    border-color: #543030;
     height: 100px;
     overflow: auto;
     background-color: white;
@@ -306,13 +291,90 @@ footer {
     color: #7e5353;
     font-family: 'Nintendo';
     font-size: 24px;
-    margin: 0;
-    margin-top: 0;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .welcome p {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    text-shadow:
+        -1px -1px 0 white,
+         1px -1px 0 white,
+        -1px  1px 0 white,
+         1px  1px 0 white;
+}
+
+.welcome > img:last-child {
+    position: relative;
+    margin-left: 100px;
+    margin-top: 60px;
+    z-index: 0;
+}
+
+/* Status */
+
+#statuscafe {
+    width: 280px;
+    height: 80px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 24px;
+    text-align: left;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -10px;
+    z-index: 2;
+
+}
+#statuscafe-username {
+    margin: 0px 10px 5px 10px;
+    font-size: 20px;
+}
+#statuscafe-content {
+    margin: 5px 5px 5px 10px;
+}
+
+.status-wrapper {
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+    filter: drop-shadow(3px 3px 0px #09003350);
+}
+
+.tail {
+    position: relative;
+    top: 34px;
+    margin-left: 190px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 0 0 5px 0;
+    transform: rotate(45deg);
+    flex-shrink: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.floating {
+            animation: float 3s ease-in-out infinite;
+            z-index: 2;
+        }
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .bubbles {
