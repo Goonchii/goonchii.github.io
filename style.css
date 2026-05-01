@@ -287,6 +287,11 @@ footer {
     text-align: left;
 }
 
+.sites {
+    overflow: auto;
+    height: 200px;
+}
+
 .welcome {
     color: #7e5353;
     font-family: 'Nintendo';
@@ -436,7 +441,7 @@ marquee {
 .about > img:first-child {
     margin-left: -10px;
     margin-right: -180px;
-    margin-top: -50px;
+    margin-top: -47px;
     margin-bottom: -60px;
     position: relative;
     z-index: 1;
