@@ -287,11 +287,6 @@ footer {
     text-align: left;
 }
 
-.sites {
-    overflow: auto;
-    height: 200px;
-}
-
 .welcome {
     color: #7e5353;
     font-family: 'Nintendo';
