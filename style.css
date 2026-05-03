@@ -36,10 +36,10 @@ body {
     margin: 0;
     color: #000000;
     background-color: white;
-    background-image: url('https://i.postimg.cc/MTqz1t3b/Depositphotos-80690800-xl-2015-1-scaled.jpg');
-    background-repeat: repeat;
+    background-image: url('assets/wallpaperflare.com_wallpaper.jpg');
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
 }
 
 a:link {
@@ -317,14 +317,16 @@ footer {
 
 #statuscafe {
     width: 280px;
-    height: 80px;
-    padding: 5px;
+    padding: 10px;
     background-color: white;
+    border: 1px dashed #3c0f15;
     border-radius: 30px;
     font-size: 24px;
     text-align: left;
     position: absolute;
-    margin-top: -25px;
+    top: auto;
+    bottom: 0;
+    margin-bottom: 205px;
     margin-left: -10px;
     z-index: 2;
 
@@ -332,9 +334,13 @@ footer {
 #statuscafe-username {
     margin: 0px 10px 5px 10px;
     font-size: 20px;
+    position: relative;
+    z-index: 3;
 }
 #statuscafe-content {
-    margin: 5px 5px 5px 10px;
+    margin: 10px 5px 10px 10px;
+    position: relative;
+    z-index: 3;
 }
 
 .status-wrapper {
@@ -346,16 +352,20 @@ footer {
 
 .tail {
     position: relative;
-    top: 34px;
+    top: 33.25px;
     margin-left: 190px;
     width: 40px;
     height: 40px;
     background: white;
-    border-radius: 0 0 5px 0;
-    transform: rotate(45deg);
+    border-radius: 5px 5px 5px 5px;
+    border-left: 1px dashed #3c0f15;
+    border-bottom: 1px dashed #3c0f15;
+    transform: rotate(-45deg);
     flex-shrink: 0;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
+    clip-path: polygon(0% 0%, 0% 0%, 100% 100%, 0% 100%);
+    
 }
 
 .floating {
