@@ -1,6 +1,6 @@
 ﻿=== Cyan Transparency Cursor Set ===
 
-By: Cursor Mania (http://www.rw-designer.com/user/111242)
+By: ADRI_34_YY (http://www.rw-designer.com/user/111242)
 
 Download: http://www.rw-designer.com/cursor-set/cyan-transparency
 
