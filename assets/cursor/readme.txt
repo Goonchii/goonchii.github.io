@@ -1,12 +1,12 @@
-﻿=== Cyan Transparency Cursor Set ===
+﻿=== Windows 7 Infernal Cyan Edit Cursor Set ===
 
-By: ADRI_34_YY (http://www.rw-designer.com/user/111242)
+By: Cursor Mania (http://www.rw-designer.com/user/111242)
 
-Download: http://www.rw-designer.com/cursor-set/cyan-transparency
+Download: http://www.rw-designer.com/cursor-set/win-7-infernal-cyan-edit
 
 Author's description:
 
-A stealth cyan color themed cursor for a dark background for more visibility.
+A new edit of the Windows 7 Infernal collection, available in my profile.
 
 ==========
 
