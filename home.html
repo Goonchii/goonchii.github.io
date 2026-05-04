@@ -35,7 +35,7 @@
 </head>
 <body>
 
-  <div id="container" style="margin-top: 10px;">
+  <div id="container" style="margin-top: 10px; position: relative;">
 
     <!-- Header -->
     <div id="headerArea" style="margin-bottom: 10px;">
@@ -58,269 +58,333 @@
       </div>
     </div>
 
-    <!-- Sidebar + Main -->
-    <div id="flex">
+    <div style="display: flex; flex-direction: column; position: relative;">
+      <!-- Sidebar + Main -->
+      <div id="flex">
 
-      <!-- Sidebar -->
-      <aside id="leftSidebar" style="margin-right: 10px;">
-        <div class="background">
-          <div class="window glass active" style="max-height: 1800px;">
-            <div class="title-bar">
-              <div class="title-bar-text">Navigation &#3366;&#3405;&#3366;&#3391;&#40;&#757; &bull;&#768; &#7447; - &#757;</div>
-              <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Maximize"></button>
-                <button aria-label="Close"></button>
-              </div>
-            </div>
-
-            <div class="window-body" style="background-color: white;">
-
-              <!-- Navigation buttons -->
-              <div class="nav">
-                <button class="redbutton" onclick="location.href='https://goonchii.neocities.org/not_found'">projects</button>
-                <button class="yellowbutton" onclick="location.href='https://goonchii.neocities.org/not_found'">art</button>
-                <button class="greenbutton" onclick="location.href='https://goonchii.neocities.org/not_found'">guestbook</button>
-                <button class="bluebutton" onclick="location.href='https://goonchii.neocities.org/stamps'">stamps</button>
-                <button class="purplebutton" onclick="location.href='https://goonchii.neocities.org/not_found'">sitemap</button>
-              </div>
-
-              <!-- Visits -->
-              <div class="h1">visits</div>
-              <div style="display: flex; align-items: center; gap: 1px; justify-content: center;">
-                <img style="image-rendering: pixelated; width: 30px; margin-right: 3px;" src="https://blob.gifcities.org/gifcities/VOWHPSHU2APNJHP656LX4TVXYTZJK2I3.gif">
-                <script id="rainbow-visits" src="https://404city.neocities.org/widget/visitorCounter.js" data-sitename="goonchii"></script>
-                <img style="transform: scaleX(-1); image-rendering: pixelated; width: 30px; margin-left: 1px;" src="https://blob.gifcities.org/gifcities/VOWHPSHU2APNJHP656LX4TVXYTZJK2I3.gif">
-              </div>
-              <!-- FC2拍手タグここから -->
-              <a href="//clap.fc2.com/post/goonchii/?url=https%3A%2F%2Fgoonchii.neocities.org&title=home" target="_blank" title="web拍手 by FC2"><img src="//clap.fc2.com/images/button/blue/goonchii?url=https%3A%2F%2Fgoonchii.neocities.org&amp;lang=ja" alt="web拍手 by FC2" style="border:none; display: block; margin: auto;
-              margin-bottom: 10px;" /></a>
-              <!-- FC2拍手タグここまで -->
-
-              <!-- Updates -->
-              <div class="h1">updates</div>
-              <div class="todo">
-                <ul class="todolist">
-                  <li><mark class="purple">23/06/25</mark> - added more stamps to cool stuff</li>
-                  <li><mark class="blue">22/06/25</mark> - added cool stuff page (wip) for my stamp collection and more!</li>
-                  <li><mark class="green">21/06/25</mark> - added links to buttons (not found for now), updates section, scrolling bar/marquee (unfinished), to-do and updates header, customised scroll bar, customised to-do section</li>
-                  <li><mark class="yellow">20/06/25</mark> - added to-do list and customisation: buttons, bubbles, kaomoji</li>
-                  <li><mark class="orange">19/06/25</mark> - added basics: layout, background, banner, font, navigation buttons, welcome message</li>
-                  <li><mark class="pink">11/06/25</mark> - created this website! :D</li>
-                </ul>
-              </div>
-
-              <!-- Link button -->
-              <div class="h1">link me</div>
-              <img style="display: block; margin: auto; margin-bottom: 3px;" src="https://goonchii.github.io/assets/button.png">
-              <textarea style="display: block; margin: auto; margin-bottom: 5px; text-align: center; width: 215px; height: 50px; border: 1px dashed;" class="todo"><a href="https://goonchii.neocities.org" target="_blank"><img src="https://goonchii.github.io/assets/button.png"></a>"</textarea>
-
-              <!-- To-do list -->
-              <div class="h1">to-do</div>
-              <div class="todo">
-                <ul class="todolist">
-                  <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> art page</li>
-                  <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> projects page</li>
-                  <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> guestbook page</li>
-                  <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> stamps page</li>
-                  <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> 404 page</li>
-                  <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> site history/progress pics in projects section??</li>
-                  <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> fix cursor selection (clap etc.)</li>
-                  <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> new bg</li>
-                  <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> music player</li>
-                </ul>
-              </div>
-
-              <div class="h1">cool sites</div>
-              <div class="todo">
-                <a href="https://xxjebodiahgamingpromlgcoolxx.neocities.org"><img src="https://xxjebodiahgamingpromlgcoolxx.neocities.org/websitebutton.gif" alt="hai ^_^" title="JEBODIAH GAMINGPROMLGCOOL WAFFLEJENKINS EPIK WEBISTE"></a>
-                <a href="https://burgeritchi.neocities.org/"><img src="https://files.catbox.moe/29hdqz.webp" width="88" height="31"></a>
-                <a href="https://ne0nbandit.neocities.org/" target="_blank"><img src="https://ne0nbandit.github.io/assets/img/btn/mine/nbbanner.png"></a>
-                <a href="https://kkul.neocities.org/"><img src="https://file.garden/aS-t0Aj4K3mdDujK/kkulbutton.gif"></a>
-                <a href="https://bugkisser.neocities.org/"><img src="https://bugkisser.neocities.org/buttons/bugkisser!.png"></a>
-                <a href="https://aioi.neocities.org"><img src="https://bugkisser.neocities.org/buttons/neighbors/aioi.gif"></a>
-                <a href="https://dirk.horse/"><img src="https://dirk.horse/BUTTON.gif"></a>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </aside>
-
-      <!-- Main + Footer-->
-      <div style="display: flex; flex-direction: column; flex: 1; gap: 5px; order: 2; position: relative;">
-
-        <!-- Main content -->
-        <main>
+        <!-- Sidebar -->
+        <aside id="leftSidebar" style="margin-right: 10px;">
           <div class="background">
-            <div class="window glass active">
+            <div class="window glass active" style="max-height: 1800px;">
               <div class="title-bar">
-                <div class="title-bar-text">Welcome ! &#40;&#758;&#707; &#5596; &#706;&#758;&#41;</div>
+                <div class="title-bar-text">Navigation &#3366;&#3405;&#3366;&#3391;&#40;&#757; &bull;&#768; &#7447; - &#757;</div>
                 <div class="title-bar-controls">
                   <button aria-label="Minimize"></button>
                   <button aria-label="Maximize"></button>
                   <button aria-label="Close"></button>
                 </div>
               </div>
-        
-              <div class="window-body has-space" style="background-color: white;">
-                <div style="text-align: center;">
-        
-                  <div class="welcome">
-                    <div style="margin-right: 10px;">
-                      <p>welcome to <span id="rainbow-url">goonchii.neocities.org</span>, the main hub on the www for all things goonchii!</p>
-                      <p>here you will find links to all of my social medias and (almost) everything i have made, including art, games and more
-                      </p>
-                      <p style="font-size: 20px;">best viewed in 1920x1080 resolution in chrome</p>
-                      <img style="image-rendering: pixelated; width: 70px; position: absolute; top: 110px; left: 340px;" src="https://nukochannel.neocities.org/NukoImg/Reactions/nukoOmikujiMediumFortune.gif">
-        
-                      <marquee style="width: 500px; position: absolute;">
-                        <p>
-                          <a href="https://cloudcover.neocities.org/digital/stamps"><img src="https://cloudcover.neocities.org/stamps/kow-chanDA.gif" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://cloudcover.neocities.org/digital/stamps"><img src="https://cloudcover.neocities.org/stamps/babykttn1.gif" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://omfg.neocities.org/graphics"><img src="https://cloudcover.neocities.org/stamps/bunger.gif" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://cloudcover.neocities.org/digital/stamps"><img src="https://cloudcover.neocities.org/stamps/LaraLeeLDAnew.gif" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://cloudcover.neocities.org/digital/stamps"><img src="https://cloudcover.neocities.org/stamps/literallyfictional1.png" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://www.deviantart.com/flaiki/"><img src="https://cloudcover.neocities.org/stamps/flaiki6.png" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://sillyratstampscollection.neocities.org/"><img src="https://64.media.tumblr.com/5260e6a18bfabe90304c760d54f3bb47/33f995f0f9a91051-5c/s100x200/6a3d86bd0dc69259d8d075a19ae82b22afe7bf7d.pnj" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://sillyratstampscollection.neocities.org/"><img src="https://adriansblinkiecollection.neocities.org/stamps/k6.gif" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://sillyratstampscollection.neocities.org/"><img src="https://pix.crd.co/assets/images/gallery24/ed73c1c4_original.png?v=cf5fcef5" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://sillyratstampscollection.neocities.org/"><img src="https://pix.crd.co/assets/images/gallery14/e3d016e5_original.png?v=cf5fcef5" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://sillyratstampscollection.neocities.org/"><img src="https://64.media.tumblr.com/c8e8255266563289203e1d34088e5010/79d8b316934d24c3-3e/s100x200/22ffb4c2c864710a3cee9c4339905bd0ec7aed47.gifv" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://sillyratstampscollection.neocities.org/"><img src="https://external-media.spacehey.net/media/sCfN74TF6xpfKfGTDjRW_U4dtlMkiPd9ZGG2D3mXAUtk=/https://img1.picmix.com/output/stamp/thumb/2/7/5/5/2325572_bdd1a.png" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://sillyratstampscollection.neocities.org/"><img src="https://external-media.spacehey.net/media/sx6UlfzG-0jGE-f-pv6CTpWh9EtxGEVbB-dhpoRUmY9Y=/https://paleking.carrd.co/assets/images/gallery16/8f89c345.gif?v26071698921061" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://sillyratstampscollection.neocities.org/"><img src="https://external-media.spacehey.net/media/sduZFoQpk6iCHoz0DqqpGYCYzJ9jY-relpj5tzcg2p68=/https://64.media.tumblr.com/1d6e435d0b72211211a6541684d1cc4b/tumblr_pcq63w0ki61xbgu08o8_100.png" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://sillyratstampscollection.neocities.org/"><img src="https://64.media.tumblr.com/04142dcfa579d702adb6d23883944bb0/d8d8cf49230dd280-93/s100x200/4ee85df29e23042a29e48d492c6f8a6383285f25.pnj" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://sillyratstampscollection.neocities.org/"><img src="https://64.media.tumblr.com/ec46fa3058e1a64c37e82d0f61c9ebea/2be3d7b7e3b8925d-54/s100x200/4d601bda031c059af83e8ca2635448350d231b97.pnj" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://sillyratstampscollection.neocities.org/"><img src="https://64.media.tumblr.com/22231001377df9e4d85a5fe93fec4c86/79d8b316934d24c3-14/s100x200/ca1b01f8cb4f9f48c2cdbab75fdf1f450f00309c.gifv" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://sillyratstampscollection.neocities.org/"><img src="https://64.media.tumblr.com/49d942d916bd0deed7a5ed1a7b4fe1d9/efb93e9c593a1dd7-d4/s100x200/13208d554ef63c0d39fe83ae4a6d29a8619fd496.gifv" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://sillyratstampscollection.neocities.org/"><img src="https://64.media.tumblr.com/a59e2a18b1c82ec094b408fc156076d5/accdd3da1f3b1740-f2/s100x200/fac06c60b7ed728e24e89401fd8989f951bbd066.pnj" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://sillyratstampscollection.neocities.org/"><img src="https://supplies.ju.mp/assets/images/gallery09/c611ce54_original.png?v=6a50b904" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://sillyratstampscollection.neocities.org/"><img src="https://64.media.tumblr.com/0bcf48a5de71f938dd037efd679ef120/31436ad25ed4101a-60/s100x200/0f85817622b623742e6177ac12c546cefe241719.pnj" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://sillyratstampscollection.neocities.org/"><img src="https://64.media.tumblr.com/005abf22c7591b629cd0cf24b2f65d84/a4b2640bd7bd3496-69/s100x200/02613616b8a213cb67ae757fecd281ac240bdced.gifv" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://xxjebodiahgamingpromlgcoolxx.neocities.org/"><img src="https://xxjebodiahgamingpromlgcoolxx.neocities.org/stampz/7.png" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://xxjebodiahgamingpromlgcoolxx.neocities.org/"><img src="https://xxjebodiahgamingpromlgcoolxx.neocities.org/stampz/idiot.gif" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://xxjebodiahgamingpromlgcoolxx.neocities.org/"><img src="https://xxjebodiahgamingpromlgcoolxx.neocities.org/stampz/sadpingas.jpg" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://xxjebodiahgamingpromlgcoolxx.neocities.org/"><img src="https://xxjebodiahgamingpromlgcoolxx.neocities.org/stampz/nyanstamp.gif" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://xxjebodiahgamingpromlgcoolxx.neocities.org/"><img src="https://xxjebodiahgamingpromlgcoolxx.neocities.org/stampz/kris.png" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://xxjebodiahgamingpromlgcoolxx.neocities.org/"><img src="https://xxjebodiahgamingpromlgcoolxx.neocities.org/stampz/rainboner.png" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://xxjebodiahgamingpromlgcoolxx.neocities.org/"><img src="https://xxjebodiahgamingpromlgcoolxx.neocities.org/stampz/penguindance.gif" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://xxjebodiahgamingpromlgcoolxx.neocities.org/"><img src="https://xxjebodiahgamingpromlgcoolxx.neocities.org/stampz/tailsgetstrolled.png" style="width: 99px; height: 56px;"/></a>
-                          <a href="https://xxjebodiahgamingpromlgcoolxx.neocities.org/"><img src="https://xxjebodiahgamingpromlgcoolxx.neocities.org/stampz/meow.jpg" style="width: 99px; height: 56px;"/></a>
-                        </p>
-                      </marquee>
-                      
-                      <li class="bubblesline">
-                        <img style="width: 300px; margin-bottom: -90px;" src="https://64.media.tumblr.com/3837f81efb037b78d5f3b83136abd9ff/a2b9a9b92798b874-24/s400x600/0c9e64c94fb660d3ef32326e9c1a891cab720857.pnj"/>
-                      </li>
-                      <li class="bubblesline">
-                        <img style="width: 300px; margin-bottom: -90px; position: absolute; top: 271px;" src="https://64.media.tumblr.com/3837f81efb037b78d5f3b83136abd9ff/a2b9a9b92798b874-24/s400x600/0c9e64c94fb660d3ef32326e9c1a891cab720857.pnj"/>
-                      </li>
-                    </div>
-        
-                    <!-- Status-->
-                    <div class="status-wrapper floating">
-                      <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div>
-                      <div class="tail"></div>
-                    </div>
-                      <script src="https://status.cafe/current-status.js?name=goonchiifish" defer></script>
-        
-                      <img style="width: 200px; height: 200px;" src="https://goonchii.github.io/assets/nerdgely blonde.png">
-        
-                    </div>
-        
-                  <!-- Social links -->
-                  <p class="h1">links</p>
-                  <div class="links">
-                    <button class="redbutton" onclick="location.href='https://www.instagram.com/goonchiifish/'">instagram</button>
-                    <button class="yellowbutton" onclick="location.href='https://www.youtube.com/channel/UClfB0QzH4kWAidjV16ji63Q'">youtube</button>
-                    <button class="greenbutton" onclick="location.href='https://github.com/Goonchii'">github</button>
-                    <img style="transform: scaleX(-1); width: 110px; image-rendering: pixelated;" src="https://goonchii.github.io/assets/nyan cat.gif"/>
-                    <button class="bluebutton" onclick="location.href='https://www.twitch.tv/goonchii'">twitch</button>
-                    <button class="purplebutton" onclick="location.href='https://ko-fi.com/goonchii'">ko-fi</button>
-                    <img style="width: 110px; image-rendering: pixelated;" src="https://goonchii.github.io/assets/nyan cat.gif"/>
-                  </div>
-        
-                  <!-- About me -->
-                  <div class="h1">about me</div>
-                  <div class="about">
-                    <img style="width: 400px; filter: drop-shadow(3px 3px 0px #09003350);" src="https://goonchii.github.io/assets/comms/goonchii_transparent_noeffects.png">
-                    <div>
-                      <p class="h2">goonchii &#0183; 23 &#0183; they/she</p>
-                      <p>my name is <mark class="pink">goonchii</mark>, but people call me <mark class="orange">goon</mark>, <mark class="yellow">gonch</mark>, <mark class="green">gonchy</mark>, <mark class="blue">goondiwindi</mark> etc. Full name <mark class="purple">goonchiifish</mark>.</p>
-                      <p>i'm a <span id="rainbow-autism">peer reviewed autistic thing</span> from the UK, currently finishing my masters in computer science
-                        <img style="height: 30px; image-rendering: pixelated; display: block; margin: 0 auto; " src="https://nukochannel.neocities.org/NukoImg/Activities/Hobbies/nukoBrowsing.gif"/>
-                      </p>
-                      <p>i code, make games, art and sometimes stream on twitch</p>
-                      <p style="font-size: 20px; color: #664040 ; margin-bottom: -1px;"><<< commissioned art by @kitsunderes</p>
-                      
-                      <li class="bubblesline">
-                        <img style="width: 300px; margin-left: 100px;" src="https://64.media.tumblr.com/3837f81efb037b78d5f3b83136abd9ff/a2b9a9b92798b874-24/s400x600/0c9e64c94fb660d3ef32326e9c1a891cab720857.pnj"/>
-                      </li>
-                      <img style="image-rendering: pixelated; width: 180px; position: absolute; top: 490px; left: 20px;" src="https://blob.gifcities.org/gifcities/ZMEV3GI77P6A2NINCMRWZ2LPQYBVSF7S.gif">
 
-                      <li class="bubblesline">
-                        <img style="width: 300px; margin-left: 100px; position: absolute; transform: scaleX(-1); top: 700; left: -88px;" src="https://64.media.tumblr.com/3837f81efb037b78d5f3b83136abd9ff/a2b9a9b92798b874-24/s400x600/0c9e64c94fb660d3ef32326e9c1a891cab720857.pnj"/>
-                      </li>
-                    </div>
-                  </div>
+              <div class="window-body" style="background-color: white;">
 
-                  <img style="image-rendering: pixelated; width: 200px; position: absolute; top: 790px; left: -100px; z-index: 1; filter: drop-shadow(3px 3px 0px #09003350); transform: scaleX(-1);" src="https://goonchii.github.io/assets/pony/flying.gif">
-
+                <!-- Navigation buttons -->
+                <div class="nav">
+                  <button class="redbutton" onclick="location.href='https://goonchii.neocities.org/not_found'">projects</button>
+                  <button class="yellowbutton" onclick="location.href='https://goonchii.neocities.org/not_found'">art</button>
+                  <button class="greenbutton" onclick="location.href='https://goonchii.neocities.org/not_found'">guestbook</button>
+                  <button class="bluebutton" onclick="location.href='https://goonchii.neocities.org/stamps'">stamps</button>
+                  <button class="purplebutton" onclick="location.href='https://goonchii.neocities.org/not_found'">sitemap</button>
                 </div>
+
+                <!-- Visits -->
+                <div class="h1">visits</div>
+                <div style="display: flex; align-items: center; gap: 1px; justify-content: center;">
+                  <img style="image-rendering: pixelated; width: 30px; margin-right: 3px;" src="https://blob.gifcities.org/gifcities/VOWHPSHU2APNJHP656LX4TVXYTZJK2I3.gif">
+                  <script id="rainbow-visits" src="https://404city.neocities.org/widget/visitorCounter.js" data-sitename="goonchii"></script>
+                  <img style="transform: scaleX(-1); image-rendering: pixelated; width: 30px; margin-left: 1px;" src="https://blob.gifcities.org/gifcities/VOWHPSHU2APNJHP656LX4TVXYTZJK2I3.gif">
+                </div>
+                <div style="text-align: center;">
+                  <!-- FC2拍手タグここから -->
+                  <a style="display: inline-block; line-height: 0;" href="//clap.fc2.com/post/goonchii/?url=https%3A%2F%2Fgoonchii.neocities.org&title=home" target="_blank" title="web拍手 by FC2"><img style="display: inline-block;" src="//clap.fc2.com/images/button/blue/goonchii?url=https%3A%2F%2Fgoonchii.neocities.org&amp;lang=ja" alt="web拍手 by FC2"/></a>
+                  <!-- FC2拍手タグここまで -->
+                </div>
+
+                <!-- Updates -->
+                <div class="h1">updates</div>
+                <div class="todo">
+                  <ul class="todolist">
+                    <li><mark class="purple">23/06/25</mark> - added more stamps to cool stuff</li>
+                    <li><mark class="blue">22/06/25</mark> - added cool stuff page (wip) for my stamp collection and more!</li>
+                    <li><mark class="green">21/06/25</mark> - added links to buttons (not found for now), updates section, scrolling bar/marquee (unfinished), to-do and updates header, customised scroll bar, customised to-do section</li>
+                    <li><mark class="yellow">20/06/25</mark> - added to-do list and customisation: buttons, bubbles, kaomoji</li>
+                    <li><mark class="orange">19/06/25</mark> - added basics: layout, background, banner, font, navigation buttons, welcome message</li>
+                    <li><mark class="pink">11/06/25</mark> - created this website! :D</li>
+                  </ul>
+                </div>
+
+                <!-- Link button -->
+                <div class="h1">link me</div>
+                <img style="display: block; margin: auto; margin-bottom: 3px;" src="https://goonchii.github.io/assets/button.png">
+                <textarea style="display: block; margin: auto; margin-bottom: 5px; text-align: center; width: 215px; height: 50px; border: 1px dashed;" class="todo"><a href="https://goonchii.neocities.org" target="_blank"><img src="https://goonchii.github.io/assets/button.png"></a>"</textarea>
+
+                <!-- To-do list -->
+                <div class="h1">to-do</div>
+                <div class="todo">
+                  <ul class="todolist">
+                    <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> art page</li>
+                    <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> projects page</li>
+                    <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> guestbook page</li>
+                    <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> stamps page</li>
+                    <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> 404 page</li>
+                    <li><img src="https://i.postimg.cc/WbfC31p0/rainbow-sub.png"/> site history/progress pics in projects section??</li>
+                  </ul>
+                </div>
+
+                <div class="h1">cool sites</div>
+                <div class="todo">
+                  <a target="_blank" href="https://xxjebodiahgamingpromlgcoolxx.neocities.org"><img src="https://xxjebodiahgamingpromlgcoolxx.neocities.org/websitebutton.gif" alt="hai ^_^" title="JEBODIAH GAMINGPROMLGCOOL WAFFLEJENKINS EPIK WEBISTE"></a>
+                  <a target="_blank" href="https://burgeritchi.neocities.org/"><img src="https://files.catbox.moe/29hdqz.webp" width="88" height="31"></a>
+                  <a href="https://ne0nbandit.neocities.org/" target="_blank"><img src="https://ne0nbandit.github.io/assets/img/btn/mine/nbbanner.png"></a>
+                  <a target="_blank" href="https://kkul.neocities.org/"><img src="https://file.garden/aS-t0Aj4K3mdDujK/kkulbutton.gif"></a>
+                  <a target="_blank" href="https://bugkisser.neocities.org/"><img src="https://bugkisser.neocities.org/buttons/bugkisser!.png"></a>
+                  <a target="_blank" href="https://aioi.neocities.org"><img src="https://bugkisser.neocities.org/buttons/neighbors/aioi.gif"></a>
+                  <a target="_blank" href="https://dirk.horse/"><img src="https://dirk.horse/BUTTON.gif"></a>
+                </div>
+
               </div>
             </div>
           </div>
-        </main>
-        
-        <!-- Footer -->
-        <main>
-          <div style="width: 600px; max-height: 157px; left: 46px; position: relative; z-index: -1;">
+        </aside>
+
+        <!-- Main -->
+        <div style="display: flex; flex-direction: column; flex: 1; gap: 5px; order: 2; position: relative; z-index: 1;">
+
+          <!-- Main content -->
+          <main>
             <div class="background">
               <div class="window glass active">
                 <div class="title-bar">
-                  <div class="title-bar-text">~~~~. &#x03C5; &#x02F6;&#x02C3; &#xFECC; &#x02C2;&#x02F6; &#x03C5;</div>
+                  <div class="title-bar-text">Welcome ! &#40;&#758;&#707; &#5596; &#706;&#758;&#41;</div>
                   <div class="title-bar-controls">
                     <button aria-label="Minimize"></button>
                     <button aria-label="Maximize"></button>
                     <button aria-label="Close"></button>
                   </div>
                 </div>
-            
+          
                 <div class="window-body has-space" style="background-color: white;">
                   <div style="text-align: center;">
-            
-                    <img src="https://ne0nbandit.github.io/assets/img/btn/utdr/KRISWHERETFAREWE.png">
-                    <img src="https://ne0nbandit.github.io/assets/img/btn/pride/queercoded.png">
-                    <img src="https://y2k.neocities.org/buttons/neocities_button.gif">
-                    <img src="https://y2k.neocities.org/buttons/made_with_windows.gif">
-                    <img src="https://y2k.neocities.org/buttons/bestview.gif">
-                    <img src="https://y2k.neocities.org/buttons/tumblr_inline_p0bn6sbzDa1ty2vf6_500.gif">
-                    <img src="https://88by31.neocities.org/anime/madoka.gif">
-                    <img src="https://88by31.neocities.org/anime/nico.gif">
-                    <img src="https://88by31.neocities.org/awareness/acceptancenow.png">
-                    <img src="https://88by31.neocities.org/games/minecraft.png">
-                    <img src="https://88by31.neocities.org/games/miitopia_button.gif">
-                    <img src="https://88by31.neocities.org/games/pictochat.gif">
-                    <img src="https://88by31.neocities.org/games/buttonyumenikki.gif">
-                    <img src="https://88by31.neocities.org/music/funny.gif">
-                    <img src="https://88by31.neocities.org/music/miku.gif">
-                    <img src="https://fustilugz.neocities.org/buttons/new%20ones%20lol/scottgames.gif">
-                    <img src="https://fustilugz.neocities.org/buttons/8/Button_TBH.gif">
-                    <img src="https://fustilugz.neocities.org/buttons/7/7/e23.gif">
-            
+          
+                    <div class="welcome">
+                      <div style="margin-right: 10px;">
+                        <p>welcome to <span id="rainbow-url">goonchii.neocities.org</span>, the main hub on the www for all things goonchii!</p>
+                        <p>here you will find links to all of my social medias and (almost) everything i have made, including art, games and more
+                        </p>
+                        <p style="font-size: 20px;">best viewed in 1920x1080 resolution in chrome</p>
+                        <img style="image-rendering: pixelated; width: 70px; position: absolute; top: 110px; left: 340px;" src="https://nukochannel.neocities.org/NukoImg/Reactions/nukoOmikujiMediumFortune.gif">
+          
+                        <marquee style="width: 500px; position: absolute;">
+                          <p>
+                            <a href="https://cloudcover.neocities.org/digital/stamps"><img src="https://cloudcover.neocities.org/stamps/kow-chanDA.gif" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://cloudcover.neocities.org/digital/stamps"><img src="https://cloudcover.neocities.org/stamps/babykttn1.gif" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://omfg.neocities.org/graphics"><img src="https://cloudcover.neocities.org/stamps/bunger.gif" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://cloudcover.neocities.org/digital/stamps"><img src="https://cloudcover.neocities.org/stamps/LaraLeeLDAnew.gif" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://cloudcover.neocities.org/digital/stamps"><img src="https://cloudcover.neocities.org/stamps/literallyfictional1.png" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://www.deviantart.com/flaiki/"><img src="https://cloudcover.neocities.org/stamps/flaiki6.png" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://sillyratstampscollection.neocities.org/"><img src="https://64.media.tumblr.com/5260e6a18bfabe90304c760d54f3bb47/33f995f0f9a91051-5c/s100x200/6a3d86bd0dc69259d8d075a19ae82b22afe7bf7d.pnj" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://sillyratstampscollection.neocities.org/"><img src="https://adriansblinkiecollection.neocities.org/stamps/k6.gif" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://sillyratstampscollection.neocities.org/"><img src="https://pix.crd.co/assets/images/gallery24/ed73c1c4_original.png?v=cf5fcef5" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://sillyratstampscollection.neocities.org/"><img src="https://pix.crd.co/assets/images/gallery14/e3d016e5_original.png?v=cf5fcef5" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://sillyratstampscollection.neocities.org/"><img src="https://64.media.tumblr.com/c8e8255266563289203e1d34088e5010/79d8b316934d24c3-3e/s100x200/22ffb4c2c864710a3cee9c4339905bd0ec7aed47.gifv" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://sillyratstampscollection.neocities.org/"><img src="https://external-media.spacehey.net/media/sCfN74TF6xpfKfGTDjRW_U4dtlMkiPd9ZGG2D3mXAUtk=/https://img1.picmix.com/output/stamp/thumb/2/7/5/5/2325572_bdd1a.png" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://sillyratstampscollection.neocities.org/"><img src="https://external-media.spacehey.net/media/sx6UlfzG-0jGE-f-pv6CTpWh9EtxGEVbB-dhpoRUmY9Y=/https://paleking.carrd.co/assets/images/gallery16/8f89c345.gif?v26071698921061" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://sillyratstampscollection.neocities.org/"><img src="https://external-media.spacehey.net/media/sduZFoQpk6iCHoz0DqqpGYCYzJ9jY-relpj5tzcg2p68=/https://64.media.tumblr.com/1d6e435d0b72211211a6541684d1cc4b/tumblr_pcq63w0ki61xbgu08o8_100.png" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://sillyratstampscollection.neocities.org/"><img src="https://64.media.tumblr.com/04142dcfa579d702adb6d23883944bb0/d8d8cf49230dd280-93/s100x200/4ee85df29e23042a29e48d492c6f8a6383285f25.pnj" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://sillyratstampscollection.neocities.org/"><img src="https://64.media.tumblr.com/ec46fa3058e1a64c37e82d0f61c9ebea/2be3d7b7e3b8925d-54/s100x200/4d601bda031c059af83e8ca2635448350d231b97.pnj" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://sillyratstampscollection.neocities.org/"><img src="https://64.media.tumblr.com/22231001377df9e4d85a5fe93fec4c86/79d8b316934d24c3-14/s100x200/ca1b01f8cb4f9f48c2cdbab75fdf1f450f00309c.gifv" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://sillyratstampscollection.neocities.org/"><img src="https://64.media.tumblr.com/49d942d916bd0deed7a5ed1a7b4fe1d9/efb93e9c593a1dd7-d4/s100x200/13208d554ef63c0d39fe83ae4a6d29a8619fd496.gifv" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://sillyratstampscollection.neocities.org/"><img src="https://64.media.tumblr.com/a59e2a18b1c82ec094b408fc156076d5/accdd3da1f3b1740-f2/s100x200/fac06c60b7ed728e24e89401fd8989f951bbd066.pnj" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://sillyratstampscollection.neocities.org/"><img src="https://supplies.ju.mp/assets/images/gallery09/c611ce54_original.png?v=6a50b904" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://sillyratstampscollection.neocities.org/"><img src="https://64.media.tumblr.com/0bcf48a5de71f938dd037efd679ef120/31436ad25ed4101a-60/s100x200/0f85817622b623742e6177ac12c546cefe241719.pnj" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://sillyratstampscollection.neocities.org/"><img src="https://64.media.tumblr.com/005abf22c7591b629cd0cf24b2f65d84/a4b2640bd7bd3496-69/s100x200/02613616b8a213cb67ae757fecd281ac240bdced.gifv" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://xxjebodiahgamingpromlgcoolxx.neocities.org/"><img src="https://xxjebodiahgamingpromlgcoolxx.neocities.org/stampz/7.png" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://xxjebodiahgamingpromlgcoolxx.neocities.org/"><img src="https://xxjebodiahgamingpromlgcoolxx.neocities.org/stampz/idiot.gif" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://xxjebodiahgamingpromlgcoolxx.neocities.org/"><img src="https://xxjebodiahgamingpromlgcoolxx.neocities.org/stampz/sadpingas.jpg" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://xxjebodiahgamingpromlgcoolxx.neocities.org/"><img src="https://xxjebodiahgamingpromlgcoolxx.neocities.org/stampz/nyanstamp.gif" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://xxjebodiahgamingpromlgcoolxx.neocities.org/"><img src="https://xxjebodiahgamingpromlgcoolxx.neocities.org/stampz/kris.png" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://xxjebodiahgamingpromlgcoolxx.neocities.org/"><img src="https://xxjebodiahgamingpromlgcoolxx.neocities.org/stampz/rainboner.png" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://xxjebodiahgamingpromlgcoolxx.neocities.org/"><img src="https://xxjebodiahgamingpromlgcoolxx.neocities.org/stampz/penguindance.gif" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://xxjebodiahgamingpromlgcoolxx.neocities.org/"><img src="https://xxjebodiahgamingpromlgcoolxx.neocities.org/stampz/tailsgetstrolled.png" style="width: 99px; height: 56px;"/></a>
+                            <a href="https://xxjebodiahgamingpromlgcoolxx.neocities.org/"><img src="https://xxjebodiahgamingpromlgcoolxx.neocities.org/stampz/meow.jpg" style="width: 99px; height: 56px;"/></a>
+                          </p>
+                        </marquee>
+                        
+                        <li class="bubblesline">
+                          <img style="width: 300px; margin-bottom: -90px;" src="https://64.media.tumblr.com/3837f81efb037b78d5f3b83136abd9ff/a2b9a9b92798b874-24/s400x600/0c9e64c94fb660d3ef32326e9c1a891cab720857.pnj"/>
+                        </li>
+                        <li class="bubblesline">
+                          <img style="width: 300px; margin-bottom: -90px; position: absolute; top: 271px;" src="https://64.media.tumblr.com/3837f81efb037b78d5f3b83136abd9ff/a2b9a9b92798b874-24/s400x600/0c9e64c94fb660d3ef32326e9c1a891cab720857.pnj"/>
+                        </li>
+                      </div>
+          
+                      <!-- Status-->
+                      <div class="status-wrapper floating">
+                        <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div>
+                        <div class="tail"></div>
+                      </div>
+                        <script src="https://status.cafe/current-status.js?name=goonchiifish" defer></script>
+          
+                        <img style="width: 200px; height: 200px;" src="https://goonchii.github.io/assets/nerdgely blonde.png">
+          
+                      </div>
+          
+                    <!-- Social links -->
+                    <p class="h1">links</p>
+                    <div class="links">
+                      <button class="redbutton" onclick="location.href='https://www.instagram.com/goonchiifish/'">instagram</button>
+                      <button class="yellowbutton" onclick="location.href='https://www.youtube.com/channel/UClfB0QzH4kWAidjV16ji63Q'">youtube</button>
+                      <button class="greenbutton" onclick="location.href='https://github.com/Goonchii'">github</button>
+                      <img style="transform: scaleX(-1); width: 110px; image-rendering: pixelated;" src="https://goonchii.github.io/assets/nyan cat.gif"/>
+                      <button class="bluebutton" onclick="location.href='https://www.twitch.tv/goonchii'">twitch</button>
+                      <button class="purplebutton" onclick="location.href='https://ko-fi.com/goonchii'">ko-fi</button>
+                      <img style="width: 110px; image-rendering: pixelated;" src="https://goonchii.github.io/assets/nyan cat.gif"/>
+                    </div>
+          
+                    <!-- About me -->
+                    <div class="h1">about me</div>
+                    <div class="about">
+                      <img style="width: 400px; filter: drop-shadow(3px 3px 0px #09003350);" src="https://goonchii.github.io/assets/comms/goonchii_transparent_noeffects.png">
+                      <div>
+                        <p class="h2">goonchii &#0183; 23 &#0183; they/she</p>
+                        <p>my name is <mark class="pink">goonchii</mark>, but people call me <mark class="orange">goon</mark>, <mark class="yellow">gonch</mark>, <mark class="green">gonchy</mark>, <mark class="blue">goondiwindi</mark> etc. Full name <mark class="purple">goonchiifish</mark>.</p>
+                        <p>i'm a <span id="rainbow-autism">peer reviewed autistic thing</span> from the UK, currently finishing my masters in computer science
+                          <img style="height: 30px; image-rendering: pixelated; display: block; margin: 0 auto; " src="https://nukochannel.neocities.org/NukoImg/Activities/Hobbies/nukoBrowsing.gif"/>
+                        </p>
+                        <p>i code, make games, art and sometimes stream on twitch</p>
+                        <p style="font-size: 20px; color: #664040 ; margin-bottom: -1px;"><<< commissioned art by @kitsunderes</p>
+                        
+                        <li class="bubblesline">
+                          <img style="width: 300px; margin-left: 100px;" src="https://64.media.tumblr.com/3837f81efb037b78d5f3b83136abd9ff/a2b9a9b92798b874-24/s400x600/0c9e64c94fb660d3ef32326e9c1a891cab720857.pnj"/>
+                        </li>
+                        <img style="image-rendering: pixelated; width: 180px; position: absolute; top: 490px; left: 20px;" src="https://blob.gifcities.org/gifcities/ZMEV3GI77P6A2NINCMRWZ2LPQYBVSF7S.gif">
+
+                        <li class="bubblesline">
+                          <img style="width: 300px; margin-left: 100px; position: absolute; transform: scaleX(-1); top: 700; left: -88px;" src="https://64.media.tumblr.com/3837f81efb037b78d5f3b83136abd9ff/a2b9a9b92798b874-24/s400x600/0c9e64c94fb660d3ef32326e9c1a891cab720857.pnj"/>
+                        </li>
+                      </div>
+                    </div>
+
+                    <img style="image-rendering: pixelated; width: 200px; position: absolute; top: 790px; left: -100px; z-index: 1; filter: drop-shadow(-3px 3px 0px #09003350); transform: scaleX(-1);" src="https://goonchii.github.io/assets/pony/flying.gif">
+
+                    <div style="position: fixed; top: 840px; left: 10px;" id="lol"><a target="_blank" href="https://napcast.bandcamp.com/album/pawprint-panic"><img class="img2" src="https://goonchii.github.io/assets/audio/Pawprint Panic.jpg"></a><img id="music" class="img1" src="https://web.archive.org/web/20220514070535im_/https://cdn.discordapp.com/attachments/822589056256311328/890714753780031488/image0.png"></div>
+                    <script>
+                      document.getElementById("music").onclick = function() {
+                        var audio = document.getElementById("audio");
+                        if (audio.paused) audio.play();
+                        else audio.pause();
+                      };
+                    </script>
+                    <audio loop autoplay id="audio" src="https://goonchii.github.io/assets/audio/Pawprint Panic.mp3"></audio>
+
                   </div>
                 </div>
               </div>
             </div>
+          </main>
+          
+          <!-- Button window -->
+          <main>
+            <div style="width: 600px; max-height: 157px; top: 3px; left: 46px; position: relative; z-index: -1;">
+              <div class="background">
+                <div class="window glass active">
+                  <div class="title-bar">
+                    <div class="title-bar-text">~~~~. Buttons ! &#x03C5; &#x02F6;&#x02C3; &#xFECC; &#x02C2;&#x02F6; &#x03C5;</div>
+                    <div class="title-bar-controls">
+                      <button aria-label="Minimize"></button>
+                      <button aria-label="Maximize"></button>
+                      <button aria-label="Close"></button>
+                    </div>
+                  </div>
+              
+                  <div class="window-body has-space" style="background-color: white;">
+                    <div style="text-align: center; margin: -5px;">
+              
+                      <img src="https://ne0nbandit.github.io/assets/img/btn/utdr/KRISWHERETFAREWE.png">
+                      <img src="https://ne0nbandit.github.io/assets/img/btn/pride/queercoded.png">
+                      <img src="https://y2k.neocities.org/buttons/neocities_button.gif">
+                      <img src="https://y2k.neocities.org/buttons/made_with_windows.gif">
+                      <img src="https://y2k.neocities.org/buttons/bestview.gif">
+                      <img src="https://y2k.neocities.org/buttons/tumblr_inline_p0bn6sbzDa1ty2vf6_500.gif">
+                      <img src="https://88by31.neocities.org/anime/madoka.gif">
+                      <img src="https://88by31.neocities.org/anime/nico.gif">
+                      <img src="https://88by31.neocities.org/awareness/acceptancenow.png">
+                      <img src="https://88by31.neocities.org/games/minecraft.png">
+                      <img src="https://88by31.neocities.org/games/miitopia_button.gif">
+                      <img src="https://88by31.neocities.org/games/pictochat.gif">
+                      <img src="https://88by31.neocities.org/games/buttonyumenikki.gif">
+                      <img src="https://88by31.neocities.org/music/funny.gif">
+                      <img src="https://88by31.neocities.org/music/miku.gif">
+                      <img src="https://fustilugz.neocities.org/buttons/new%20ones%20lol/scottgames.gif">
+                      <img src="https://fustilugz.neocities.org/buttons/8/Button_TBH.gif">
+                      <img src="https://fustilugz.neocities.org/buttons/7/7/e23.gif">
+              
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          
+        </div>
+
+      </div>
+
+      <!-- Footer -->
+      <div id="headerArea" style="max-height: 400px; margin-top: 10px; position: relative; z-index: 0;">
+        <div class="background" style="margin-bottom: 10px;">
+          <div class="window glass active">
+            <div class="title-bar">
+              <div class="title-bar-text"> ( ,,>&#x30EE;<,, ) ! ;</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="window-body">
+              <div class="footer" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                <div class="blinkies">
+                  <img src="https://magneticdogz.neocities.org/media/graphics/blinkies/badwebsite.gif">
+                  <img src="https://magneticdogz.neocities.org/media/graphics/blinkies/bug.gif">
+                  <img src="https://magneticdogz.neocities.org/media/graphics/blinkies/yippee.gif">
+                  <img src="https://magneticdogz.neocities.org/media/graphics/blinkies/2003.gif">
+                  <img src="https://magneticdogz.neocities.org/media/graphics/blinkies/animalcrossing.gif">
+                </div>
+                <div class="blinkies" style="margin-left: -30px;">
+                  <img src="https://magneticdogz.neocities.org/media/graphics/blinkies/luckystar.gif">
+                  <img src="https://adriansblinkiecollection.neocities.org/52.gif">
+                  <img src="https://adriansblinkiecollection.neocities.org/46.gif">
+                  <img src="https://adriansblinkiecollection.neocities.org/d39.gif">
+                  <img src="https://adriansblinkiecollection.neocities.org/e57.gif">
+                </div>
+                <div>
+                  <p>hosted on <a target="_blank" style="font-size: 24px;" href="https://neocities.org/">neocities</a></p>
+                  <p>&#0183; goonchiifish 2025 - 2026 &#0183;</p>
+                  <p><span id="rainbow-footer">thanks for visiting!</span></p>
+                </div>
+                <div class="blinkies" style="margin-right: -30px;">
+                  <img src="https://adriansblinkiecollection.neocities.org/y39.gif">
+                  <img src="https://adriansblinkiecollection.neocities.org/g92.gif">
+                  <img src="https://adriansblinkiecollection.neocities.org/g95.gif">
+                  <img src="https://adriansblinkiecollection.neocities.org/d22.gif">
+                  <img src="https://adriansblinkiecollection.neocities.org/e75.gif">
+                </div>
+                <div class="blinkies">
+                  <img src="https://adriansblinkiecollection.neocities.org/e62.gif">
+                  <img src="https://adriansblinkiecollection.neocities.org/e98.gif">
+                  <img src="https://adriansblinkiecollection.neocities.org/l2.gif">
+                  <img src="https://adriansblinkiecollection.neocities.org/x44.gif">
+                  <img src="https://adriansblinkiecollection.neocities.org/c17.gif">
+                </div>
+              </div>
+            </div>
           </div>
-        </main>
-        
+        </div>
       </div>
 
     </div>
-  </div>
 
+  </div>
 </body>
 
 <script>
@@ -335,6 +399,7 @@
 
     rainbowText("rainbow-url");
     rainbowText("rainbow-autism");
+    rainbowText("rainbow-footer");
 </script>
 
 </html>

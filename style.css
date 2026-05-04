@@ -11,7 +11,7 @@
 }
 
 /* pointer - for links and buttons */
-a, button {
+a, button, a img {
     cursor: url('assets/cursor/link.cur'), pointer;
 }
 
@@ -46,6 +46,7 @@ a:link {
     text-decoration: none;
     margin: 0;
     padding: 0;
+    cursor: url('assets/cursor/link.cur'), pointer;
 }
 
 h1,
@@ -105,11 +106,25 @@ main {
     background-color: #13092D;
 }
 
-footer {
-    height: 40px;
-    padding: 10px;
+.footer {
     text-align: center;
-    order: 3;
+    font-family: Nintendo;
+    font-size: 24px;
+    color: #543030;
+}
+
+.footer p {
+    margin: 5px;
+}
+
+.blinkies {
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
+}
+
+.blinkies img {
+    height: 20px;
 }
 
 /* Header */
@@ -475,7 +490,7 @@ marquee {
     flex-direction: column;
     border: 0px solid white;
     user-select: none;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 #visitorCounter::before {
     content: "you are visitor:";
@@ -483,6 +498,58 @@ marquee {
     font-family: Nintendo;
     color: #7e5353;
 }
+  
+  lol,
+  .img2 {
+    /* album's cover image u can change the size! */
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: black;
+    z-index: 1;
+  }
+
+  .img1 {
+    /* cd image u can change the size too */
+    position: absolute;
+    width:auto;
+    height:90px;
+    top: 6px;
+    left: 55px;
+    -webkit-animation: spin 2s linear infinite;
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+  }
+
+  .img1 hover {
+    cursor: help;
+  }
+
+  @-moz-keyframes spin {
+    100% {
+      -moz-transform: rotate(360deg);
+    }
+  }
+
+  @-webkit-keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  .img1:hover {
+    /* this makes the cd stop spinning when hovering! */
+    -webkit-animation: pop 0.3s ease;
+  }
 
 /* Text colours */
 
