@@ -42,10 +42,21 @@
                     </div>
               </div>
               <img class="floating" style="width: 500px; position: absolute; z-index: 1; top: -70px; left: 320px;" src="https://goonchii.github.io/assets/comms/goonchii_sketch_background_removed.png">
-            </div>
           </div>
         </div>
     </div>
+
+    <div style="position: fixed; bottom: 0px; left: 0px;" id="lol"><a target="_blank" href="https://napcast.bandcamp.com/album/pawprint-panic"><img class="img2" src="https://goonchii.github.io/assets/audio/Pawprint Panic.jpg"></a><img id="music" class="img1" src="https://web.archive.org/web/20220514070535im_/https://cdn.discordapp.com/attachments/822589056256311328/890714753780031488/image0.png"></div>
+      <script>
+        document.getElementById("music").onclick = function() {
+          var audio = document.getElementById("audio");
+          if (audio.paused) audio.play();
+          else audio.pause();
+        };
+      </script>
+      <audio loop autoplay id="audio" src="https://goonchii.github.io/assets/audio/Pawprint Panic.mp3"></audio>
+    </div>
+    
   </body>
 
 <script>
