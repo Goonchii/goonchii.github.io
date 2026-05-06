@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Not Found</title>
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/7.css/dist/gui/window.css">
   </head>
   <body>
-    <h1>Page Not Found</h1>
-    <p>The requested page was not found.</p>
+    <div class="center-screen">
+      <div id="headerArea" style="max-height: 400px; position: relative; z-index: 0;">
+        <div class="background" style="margin-bottom: 10px;">
+          <div class="window glass active">
+            <div class="title-bar">
+              <div class="title-bar-text"> ( &#x02F6; &#x00B0; &#x3141; &#x00B0; ) ! !</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="window-body">
+              <div style="margin: 100px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 50px;">
+                <p class="welcome p" style="font-size: 50px;">404: Page not found</p>
+                <button class="brownbutton" onclick="location.href='https://goonchii.neocities.org/home'">home</button>
+                <p class="welcome p" style="margin-top: -30px;">commissioned art by @kitsunderes >>></p>
+              </div>
+              <img class="floating" style="width: 500px; position: absolute; z-index: 1; top: -100px; left: 350px;" src="https://goonchii.github.io/assets/comms/goonchii_sketch_background_removed.png">
+            </div>
+          </div>
+        </div>
+    </div>
   </body>
 </html>
