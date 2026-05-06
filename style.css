@@ -384,9 +384,9 @@ main {
 }
 
 .floating {
-            animation: float 3s ease-in-out infinite;
-            z-index: 2;
-        }
+    animation: float 3s ease-in-out infinite;
+    z-index: 2;
+}
 
 @keyframes float {
     0% {
