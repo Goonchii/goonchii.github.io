@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="https://unpkg.com/7.css/dist/gui/window.css">
   </head>
   <body>
+
+    <div style="position: fixed; bottom: 5px; left: 5px;" id="lol"><a target="_blank" href="https://pixabay.com/sound-effects/nature-nature-ambience-323729/"><img class="img2" src="https://goonchii.github.io/assets/audio/nature-ambience-cover.png"></a><img id="music" class="img1" src="https://web.archive.org/web/20220514070535im_/https://cdn.discordapp.com/attachments/822589056256311328/890714753780031488/image0.png"></div>
+  <audio loop autoplay id="audio" src="https://goonchii.github.io/assets/audio/nature-ambience.mp3"></audio>
+  <script>
+    var audio = document.getElementById("audio");
+    audio.volume = 1;
+    document.getElementById("music").onclick = function() {
+      if (audio.paused) audio.play();
+      else audio.pause();
+    };
+  </script>
+
     <div class="center-screen" style="margin-top: -100px;">
       <div id="headerArea" style="max-height: 400px; position: relative; z-index: 0;">
         <div class="background" style="margin-bottom: 10px;">
@@ -46,17 +58,6 @@
         </div>
     </div>
 
-    <div style="position: fixed; bottom: 0px; left: 0px;" id="lol"><a target="_blank" href="https://napcast.bandcamp.com/album/pawprint-panic"><img class="img2" src="https://goonchii.github.io/assets/audio/Pawprint Panic.jpg"></a><img id="music" class="img1" src="https://web.archive.org/web/20220514070535im_/https://cdn.discordapp.com/attachments/822589056256311328/890714753780031488/image0.png"></div>
-      <script>
-        document.getElementById("music").onclick = function() {
-          var audio = document.getElementById("audio");
-          if (audio.paused) audio.play();
-          else audio.pause();
-        };
-      </script>
-      <audio loop autoplay id="audio" src="https://goonchii.github.io/assets/audio/Pawprint Panic.mp3"></audio>
-    </div>
-    
   </body>
 
 <script>
