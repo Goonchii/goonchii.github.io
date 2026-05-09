@@ -56,7 +56,13 @@ h3 {
 }
 
 h1 {
-    font-size: 25px;
+    font-family: Nintendo;
+    font-size: 35px;
+    color: white;
+    background-color: #664040;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 
 strong {
@@ -70,9 +76,8 @@ strong {
     margin: 0 auto;
 }
 
-#container a {
+a:visited {
     color: #3c0f15;
-    font-size: 30px;
 }
 
 #flex {
@@ -509,7 +514,16 @@ marquee {
     font-family: Nintendo;
     color: #7e5353;
 }
-  
+
+.sitemap {
+    text-align: left;
+    column-width: auto;
+    column-count: 3;
+    column-height: auto;
+    column-wrap: auto;
+    display: block;
+}
+
   lol,
   .img2 {
     /* album's cover image u can change the size! */
