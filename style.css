@@ -47,6 +47,7 @@ a:link {
     margin: 0;
     padding: 0;
     cursor: url('assets/cursor/link.cur'), pointer;
+    color: #7e5353;
 }
 
 h1,
@@ -522,6 +523,26 @@ marquee {
     column-height: auto;
     column-wrap: auto;
     display: block;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.projects div {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects img {
+    width: 200px;
+    height: 200px;
+
 }
 
   lol,
