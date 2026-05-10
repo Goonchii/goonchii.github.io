@@ -11,7 +11,7 @@
 }
 
 /* pointer - for links and buttons */
-a, button, a img {
+a, button, a img, a div, a p {
     cursor: url('assets/cursor/link.cur'), pointer;
 }
 
@@ -526,23 +526,169 @@ marquee {
 }
 
 .projects {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
+    margin: 20px;
 }
 
 .projects div {
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5px;
+    vertical-align: text-bottom;
+    border: 1px dashed #543030;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.projects p {
+    margin: 5px;
+    color: #7e5353;
+    font-family: 'Nintendo';
+    font-size: 30px;
+    width: 200px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .projects img {
     width: 200px;
     height: 200px;
+    border-radius: 5px;
+    margin-bottom: 5px;
 
+}
+
+.autism-creatures {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin: 20px;
+    column-count: 2;
+    margin: 0;
+    color: #7e5353;
+    font-family: 'Nintendo';
+    font-size: 24px;
+}
+
+.autism-creatures div {
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.autism-creatures .right {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+.autism-creatures p {
+    margin: 0px;
+}
+
+.autism-creatures .button-group {
+    display: flex;
+    gap: 5px;
+}
+
+.autism-creatures button {
+    width: 200px;
+    font-size: 40px;
+}
+
+.autism-creatures img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.autismopedia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin: 20px;
+    column-count: 2;
+    margin: 0;
+    color: #7e5353;
+    font-family: 'Nintendo';
+    font-size: 24px;
+}
+
+.autismopedia div {
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.autismopedia .right {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+}
+
+.autismopedia p {
+    margin: 0px;
+}
+
+.autismopedia .button-group {
+    display: flex;
+    gap: 5px;
+}
+
+.autismopedia button {
+    width: 200px;
+    font-size: 40px;
+}
+
+.autismopedia img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.autismopedia .icon {
+    width: 50px;
+    height: auto;
+}
+
+.autismopedia .custom-h {
+    width: auto;
+    height: 50px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin: 0px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
 }
 
   lol,
