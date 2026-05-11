@@ -588,7 +588,7 @@ marquee {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -608,79 +608,52 @@ marquee {
 
 .autism-creatures img {
     width: 100%;
-    height: auto;
+    height: 225.55px;
     border-radius: 5px;
 }
 
-.autismopedia {
+.autismopedia-card {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-    margin: 20px;
-    column-count: 2;
-    margin: 0;
-    color: #7e5353;
-    font-family: 'Nintendo';
-    font-size: 24px;
-}
-
-.autismopedia div {
-    margin: 5px;
-    align-items: center;
-    justify-content: center;
-}
-
-.autismopedia .right {
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 380px 1fr;
+    gap: 16px;
     align-items: start;
-    justify-content: start;
-    gap: 10px;
 }
 
-.autismopedia p {
-    margin: 0px;
-}
-
-.autismopedia .button-group {
-    display: flex;
-    gap: 5px;
-}
-
-.autismopedia button {
-    width: 200px;
-    font-size: 40px;
-}
-
-.autismopedia img {
+.autismopedia-card img.portrait {
     width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
+.autismopedia-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
-.autismopedia .icon {
+.autismopedia-info .label-row {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 8px;
+}
+
+.autismopedia-info .label-row .icon {
     width: 50px;
     height: auto;
 }
 
-.autismopedia .custom-h {
-    width: auto;
+.autismopedia-info .label-row .custom-h {
     height: 50px;
+    width: auto;
 }
 
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-    margin: 0px;
-}
-
-.image-grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+.autismopedia-info p {
+    margin: 0;
+    color: #7e5353;
+    font-family: 'Nintendo';
+    font-size: 24px;
+    text-align: right;
 }
 
 .grow {
