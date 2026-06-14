@@ -626,50 +626,6 @@ marquee {
     border-radius: 5px;
 }
 
-.autismopedia-card {
-    display: grid;
-    grid-template-columns: 380px 1fr;
-    gap: 16px;
-    align-items: start;
-}
-
-.autismopedia-card img.portrait {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.autismopedia-info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.autismopedia-info .label-row {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 8px;
-}
-
-.autismopedia-info .label-row .icon {
-    width: 50px;
-    height: auto;
-}
-
-.autismopedia-info .label-row .custom-h {
-    height: 50px;
-    width: auto;
-}
-
-.autismopedia-info p {
-    margin: 0;
-    color: #7e5353;
-    font-family: 'Nintendo';
-    font-size: 24px;
-    text-align: right;
-}
-
 .image-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -693,6 +649,53 @@ marquee {
     align-items: center;
     justify-content: center;
 }
+
+.autismopedia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.autismopedia div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 0px;
+    vertical-align: text-bottom;
+    border: 1px dashed #543030;
+    border-radius: 5px;
+    background-color: white;
+    max-width: 165px;
+}
+
+.autismopedia p {
+    margin: 1px;
+    color: #7e5353;
+    font-family: 'Nintendo';
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.autismopedia .h2 {
+    font-size: 35px;
+    margin: 0px;
+}
+
+.autismopedia img {
+    height: 200px;
+    width: auto;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin: 0px;
+
+}
+
 
 .grow {
   transition: all 0.2s ease-in-out;
@@ -762,6 +765,12 @@ marquee {
 .green  { background-color: rgba(255, 255, 255, 0); color: #7fc938; }
 .blue   { background-color: rgba(255, 255, 255, 0); color: #14c9dd; }
 .purple { background-color: rgba(255, 255, 255, 0); color: #a037f0; }
+
+.common { background-color: rgba(255, 255, 255, 0); color: #39e940; }
+.uncommon { background-color: rgba(255, 255, 255, 0); color: #3ee8ec; }
+.rare { background-color: rgba(255, 255, 255, 0); color: #884ce9; }
+.superrare { background-color: rgba(255, 255, 255, 0); color: #f3d14a; }
+.mythic { background-color: rgba(255, 255, 255, 0); color: #ff2362; }
 
 /* Scrollbar */
 
