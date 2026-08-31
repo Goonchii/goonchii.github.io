@@ -46,7 +46,7 @@ body {
     font-size: 16px;
     color: #000000;
     background-color: white;
-    background-image: url('assets/wallpaperflare.com_wallpaper.jpg');
+    background-image: url("https://goonchii.github.io/assets/wallpaperflare_wallpaper.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
